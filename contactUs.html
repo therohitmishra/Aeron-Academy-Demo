@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .custom-bg {
+            background: rgb(168,57,157);
+            background: linear-gradient(90deg, rgba(168,57,157,1) 2%, rgba(47,32,103,1) 100%);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-pops">
+
+    <header>
+        <div
+            class="container mx-auto flex flex-col items-center p-5 w-full flex-wrap gap-2 font-pops border-2 lg:flex-row lg:justify-between">
+    
+            <!-- div1 in header div -->
+            <div class="w-2/5 mb-1 lg:mb-0 lg:w-1/12">
+                <img src="./../resources/aa/aalogo-50.png" alt="">
+    
+            </div>
+    
+            <!-- div2 in header div  -->
+            <div class="flex flex-wrap items-center text-base justify-center text-lg lg:text-base font-semibold ">
+                <a class="mr-5 hover:text-white" href="indexv2.html">Home</a>
+                <a class="mr-5 hover:text-white" href="#aboutus">About</a>
+                <a class="mr-5 hover:text-white" href="./courses.html">Courses</a>
+                <a class="mr-5 hover:text-white" href="contactUs.html">Contact Us</a>
+                <button class="pN:hidden rounded-xl text-xl lg:text-base bg-pfamily2-800 px-3 py-2 text-white">Admission
+                    Open</button>
+    
+            </div>
+    
+        </div>
+    </header>
+    
+    <section class=" container mx-auto my-24">
+        <div class="  flex flex-col px-5 items-center
+        lg:flex-row">
+            <div class=" custom-bg flex flex-wrap flex-1 text-white font-semibold items-center space-y-10 py-10 px-8 
+            lg:flex-col lg:py-24">
+
+                <h1 class="text-5xl lg:text-8xl">Thank You For Your Interest.</h1>
+                <p class="4xl lg:text-4xl">We will contact you shortly via Phone or Email</p>
+            </div>
+            <div class="flex flex-1 justify-center bg-gray-100 p-4">
+
+                <form action="" class="" >
+
+                    <!-- input 1 -->
+                    <div class="flex flex-col  items-center rounded-lg text-xl my-5 ">
+                        <label class="font-semibold text-bluegray-700 " for="">Full Name</label>
+                        <input placeholder="Enter your Full Name" type="text" class="px-2 py-3 w-full rounded-lg border-2 
+                        hover:border-4 hover:shadow-inner hover:border-blue-400 ">
+                    </div>
+
+                    <!-- input2  -->
+                    <div class="flex flex-col items-center rounded-lg text-xl mb-5">
+                        <label class="font-semibold text-bluegray-700" for="">Phone Number</label>
+                        <input placeholder="Enter your Phone Number" type="text" class="px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400">
+                    </div>
+
+                    <!-- input 3 -->
+                    <div class="flex flex-col items-center rounded-lg text-xl mb-7">
+                        <label class="font-semibold text-bluegray-700" for="">Email Address</label>
+                        <input placeholder="Enter your Email Address" type="text" class=" px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400">
+                    </div>
+
+                    <!-- input 4  -->
+                    <div class="flex flex-col items-center rounded-lg text-xl mb-12">
+                        <label class="font-semibold text-bluegray-700" for="">Interested Course</label>
+                        <select name="" id="" class=" px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400">
+                            <optgroup class="text-lg">
+                                <option disabled selected value="">Select From List</option>
+                                <option value="">Aviation & Hospitality</option>
+                                <option value="">Aircraft Maintainance Engineering</option>
+                                <option value="">Commercial Pilot LIcense</option>
+                                <option value="">Hotel Managment</option>
+                                <option value="">Event Managment</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- submit btn -->
+                    <div class="flex flex-col px-10"> 
+                    <button type="submit" class="p-5 bg-purple-500 text-white font-semibold rounded-lg">Submit Now</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
