@@ -590,15 +590,6 @@ video {
   position: relative;
 }
 
-.-m-4 {
-  margin: -1rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -607,11 +598,6 @@ video {
 .mx-px {
   margin-left: 1px;
   margin-right: 1px;
-}
-
-.-mx-2 {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
 }
 
 .my-5 {
@@ -726,10 +712,6 @@ video {
   height: 1rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -744,10 +726,6 @@ video {
 
 .w-4 {
   width: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .w-20 {
@@ -1009,6 +987,11 @@ video {
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
 .bg-blue-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
@@ -1119,11 +1102,6 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -1387,21 +1365,6 @@ video {
   color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.hover\:text-gray-500:hover {
-  --tw-text-opacity: 1;
-  color: rgba(107, 114, 128, var(--tw-text-opacity));
-}
-
-.hover\:text-gray-700:hover {
-  --tw-text-opacity: 1;
-  color: rgba(55, 65, 81, var(--tw-text-opacity));
-}
-
 .hover\:text-blacktint-700:hover {
   --tw-text-opacity: 1;
   color: rgba(86, 76, 78, var(--tw-text-opacity));
@@ -1468,6 +1431,11 @@ video {
 }
 
 @media (min-width: 410px) and (max-width: 638px) {
+  .pN\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .pN\:mt-3 {
     margin-top: 0.75rem;
   }
@@ -1480,6 +1448,22 @@ video {
     display: none;
   }
 
+  .pN\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .pN\:w-8\/12 {
+    width: 66.666667%;
+  }
+
+  .pN\:w-9\/12 {
+    width: 75%;
+  }
+
+  .pN\:w-10\/12 {
+    width: 83.333333%;
+  }
+
   .pN\:flex-col {
     flex-direction: column;
   }
@@ -1490,6 +1474,10 @@ video {
 
   .pN\:justify-center {
     justify-content: center;
+  }
+
+  .pN\:pl-16 {
+    padding-left: 4rem;
   }
 
   .pN\:text-center {
@@ -1516,17 +1504,8 @@ video {
     display: flex;
   }
 
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
   .sm\:justify-between {
     justify-content: space-between;
-  }
-
-  .sm\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 }
 
