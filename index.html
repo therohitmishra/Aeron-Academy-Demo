@@ -1,486 +1,745 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aeron Academy</title>
+    <title>Aeron Academy - Aviation and Hospitality school</title>
+    <link rel="shortcut icon" type="image/jpg" href="./resources/aa/favicon.jpg" />
+    <meta name="description" content="Job Gurantee Training Institue for aviation and hospitality training , Hotel Managment , Pilot License , Event Mangment .">
 
     <!-- style and icon  -->
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./stylecustom.css">
+    <link rel="stylesheet" href="./customcss.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-     <!-- google fonts  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+        <style>
+            .swiper-slide {
+            width: auto;
+}
+        </style>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ393S91CL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ393S91CL"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-        gtag('config', 'G-RJ393S91CL');
-    </script>
+            gtag('config', 'G-RJ393S91CL');
+        </script>
     
-
-
 </head>
 
-<body class="" >
+<body class="">
+
 
     <!-- header (logo-navLinks-Button) mob done-->
     <header>
         <div
             class="mx-auto flex flex-col items-center p-5 w-full flex-wrap gap-2 font-pops border-2 lg:flex-row lg:justify-between">
-    
+
             <!-- div1 in header div -->
-            <div class="w-2/5 mb-1 lg:mb-0 lg:w-1/4 lg:ml-10">
+            <div class="w-2/5 mb-1 lg:mb-0 lg:w-1/12 lg:ml-10">
                 <img src="./resources/aa/aeron-acaademy-logo-purple2.png" alt="">
-    
+
             </div>
-    
+
             <!-- div2 in header div  -->
             <div class="flex flex-wrap items-center text-base justify-center text-lg lg:text-base font-semibold ">
-                <a class="mr-5 hover:text-blacktint-700 hover:underline" href="./index.html">Home</a>
+                <a class="mr-5 hover:text-blacktint-700 hover:underline" href="index.html">Home</a>
                 <a class="mr-5 hover:text-blacktint-700 hover:underline" href="#aboutus">About</a>
                 <a class="mr-5 hover:text-blacktint-700 hover:underline" href="./courses.html">Courses</a>
-                <a class="mr-5 hover:text-blacktint-700 hover:underline" href="./contactUs.html">Contact Us</a>
+                <a class="mr-5 hover:text-blacktint-700 hover:underline" href="contactUs.html">Contact Us</a>
                 <button class="pN:hidden rounded text-xl lg:text-base bg-purpltint-900 text-white
-                                    font-semibold px-4 py-3 
-                                    hover:bg-purpltint-800 hover:shadow-md
-                                    hover:rounded-md">Admission
+                                font-semibold px-4 py-3 
+                                hover:bg-purpltint-800 hover:shadow-md
+                                hover:rounded-md">Admission
                     Open</button>
-    
+
             </div>
-    
+
         </div>
     </header>
-    
+
     <!-- Hero section(banner) -->
     <section>
-    
+
         <!-- [wrapper div]  -->
         <div class=" bg-gray-50 mx-auto flex flex-col items-center px-20 py-10  
-            lg:flex-row lg:py-15">
-    
+        lg:flex-row lg:py-15">
+
             <!-- hero section texts and buttons  -->
             <div class="flex flex-col items-center text-center mb-10 lg:flex-1 lg:text-left ">
                 <h2 class="font-robo text-bluegray-900 font-semibold text-5xl mb-10 
-                                lg:font-bold">
+                            lg:font-bold">
                     Training and Placement in Aviation and Hospitality,Hotel and Event
                     Industries
                 </h2>
-    
+
                 <p class="font-pops text-xl mb-10 lg:pr-24  ">
                     At aeron academy we train you with specialized in
                     demand modern skills. Over 88% of all graduates
                     are employed within 6 months of graduation.
                 </p>
-    
-    
-    
+
+
+
                 <!-- div having buttons inside hero text div  -->
                 <div class="w-full flex flex-col items-center font-pops text-xl gap-5 lg:flex-row  ">
                     <a href="./contactUs.html">
                         <button class=" text-white bg-purpltint-900 rounded py-2 px-5 lg:py-5 lg:px-6 shadow-md
-                                            hover:bg-purpltint-800 hover:shadow-md font-semibold
-                                            hover:rounded-xl">
+                                        hover:bg-purpltint-800 hover:shadow-md font-semibold
+                                        hover:rounded-xl">
                             Apply for Admission
                         </button>
                     </a>
                     <a href="#">
                         <button class=" shadow-md rounded px-5 py-2 lg:py-5 lg:px-6
-                                            hover:bg-gray-100 hover:shadow-md
-                                            hover:rounded-xl hover:font-normal">
+                                        hover:bg-gray-100 hover:shadow-md
+                                        hover:rounded-xl hover:font-normal btn-open ">
                             Download Brochure
                         </button>
                     </a>
-    
+
                 </div>
             </div>
-    
+
             <!-- heros section image  -->
             <div class="lg:flex-1">
                 <img class="" src="./resources/aa/9aug-hero1.png" alt="">
             </div>
-    
+
         </div>
-    
+
     </section>
 
-    
 
-    <!-- main content begin here (everything except header,hero,footer ) -->
-    <main class=" lg:px-0">
 
-        <!-- placement companies brands logo  -->
-        <section class=" container px-4 py-24 pt- mx-auto max-w-7xl lg:flex pN:text-center md:text-center lg:flex-col lg:items-center lg:space-y-10 lg:px-20">
+
+    <main class="">
+
+
+
+        <!-- modal 1 form  -->
+        <section class=" hidden font-pops bg-black bg-opacity-90 modalstyle " id="modal">
+            <div class=" ">
+
+                <div class="mx-auto my-36  bg-white lg:w-4/12 pN:mx-5 modalform">
+
+                    <div class="text-right pt-2 ">
+                        <i class=" cursor-pointer bi bi-x-circle pr-5 text-2xl " id="btn-close"></i>
+                    </div>
+                    <div class="px-10">
+                        <p class="text-center font-semibold text-2xl">Here is your student help book
+                            containing admisiion details and course
+                            information</p>
+                    </div>
+                    <div>
+                        <form class=" text-center mt-8 pb-10" name="downloadbrouchure" id="downloadbrouchure">
+                            <div class="mb-3">
+                                <label for="" class="mb-1 font-semibold">Full Name</label>
+                                <input type="text" name="Name" id="Name" placeholder="your name" required
+                                    class="block mx-auto border-2 border-purpltint-900 rounded px-5 py-3">
+                            </div>
+
+                            <div class="mb-10">
+                                <label for="" class="mb-1 text-center font-semibold">Phone Number</label>
+                                <input type="tel" name="Phone" id="Phone" placeholder="your phone number" 
+                                    class="block mx-auto border-2 border-purpltint-900 rounded px-5 py-3"  pattern="[789][0-9]{9}" required>
+                            </div>
+
+                            <div class="hidden">
+                                <input type="text" name="Time" id="time1" value="">
+                            </div>
+
+                            <button type="submit"
+                                class="mx-auto bg-purpltint-900 text-white font-semibold px-8 py-3 rounded">Get my
+                                book</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <!-- course categories  -->
+        <section class="font-pops bg-white lg:mt-20 lg:pt-20 " >
+
+            <!-- info : img-512px x512px  -->
+            <div class="grid lg:grid-cols-2 lg:px-32">
+
+                <!-- course heading  -->
+                <div class="py-16  bg-blacktint-800 rounded "> 
+                    <div class="  w-full "><img src="./resources/aa/courselist.png" alt="" class=" w-1/12 mx-auto"></div>
+                    <div class="">
+                        <p class="text-2xl font-medium text-purpltint-100  underline text-center">Make your carrer choice</p>
+                        <p class="text-4xl text-white font-semibold text-center">From these courses </p>
+                    </div>
+                </div>
+
+                <!-- aviatin card  -->
+                <div>
+                    <div class="flex items-center  ">
+                        <div class="">
+                            <img src="./resources/aa/plane.png" alt="" class="w-4/12 mx-auto">
+                        </div>
+
+                        <div class=" p-5">
+                            <p class="text-3xl font-semibold mb-3">Aviation & Hospitality</p>
+                            <p class="font-robo text-medium mb-3">Get high-quality training and placement opportunities
+                                for various departments in Aviation and Hospitality Industry</p>
+                            <a href="./courses.html#ah" class="hover:text-purpltint-900 hover:underline">Learn more ></a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- hotel card  -->
+                <div>
+                    <div class="flex items-center">
+                        <div class="">
+                            <img src="./resources/aa/hotel.png" alt="" class="w-4/12 mx-auto ">
+                        </div>
+
+                        <div class=" p-5 ">
+                            <p class="text-3xl font-semibold mb-3">Hotel Managment</p>
+                            <p class="font-robo text-medium mb-3 ">Engage with Hospitality Experts and Learn the Skills
+                                Necessary To accelerate your career in the Hospitality sector</p>
+                            <a href="./courses.html#hm" class="hover:text-purpltint-900 hover:underline">Learn more ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pilot card  -->
+                <div>
+                    <div class="flex items-center  ">
+                        <div class="">
+                            <img src="./resources/aa/captain.png" alt="" class="w-4/12 mx-auto">
+                        </div>
+
+                        <div class="p-5">
+                            <p class="text-3xl font-semibold mb-3">Pilot License</p>
+                            <p class="font-robo text-medium mb-3">one-stop solution provider for Commercial
+                                Pilot License with Multi-Engine Rating and DGCA Conversion requirements</p>
+                            <a href="./courses.html#cpl" class="hover:text-purpltint-900 hover:underline">Learn more ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- event card  -->
+                <div>
+                    <div class="flex items-center ">
+                        <div class="lg:pl-5">
+                            <img src="./resources/aa/spotlight.png" alt="" class="w-4/12 mx-auto">
+                        </div>
+
+                        <div class="py-5 pr-5 pl-8 lg:pl-8 ">
+                            <p class="text-3xl font-semibold mb-3">Event Managment</p>
+                            <p class="font-robo text-medium mb-3">Award-winning Team of event management professionals
+                                who are carrying out leading research and have great links
+                                with industry</p>
+                            <a href="./courses.html#em" class="hover:text-purpltint-900 hover:underline">Learn more ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- maintainance card  -->
+                <div class="lg:-ml-3">
+                    <div class="flex items-center">
+                        <div class="">
+                            <img src="./resources/aa/settings.png" alt="" class="w-4/12 mx-auto">
+                        </div>
+
+                        <div class="p-5">
+                            <p class="text-3xl font-semibold mb-3">Airctraft Maintanance</p>
+                            <p class="font-robo text-medium mb-3">Aircraft Maintenance Engineer repairs,
+                                check operating engines & electronics systems, troubleshoot the problem</p>
+                            <a href="./courses.html#ae" class="hover:text-purpltint-900 hover:underline">Learn more ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- brand logo 2  -->
+
+        <section class="lg:px-32  pN:px-5 my-20 brands2 font-pops pN:pb-20 pN:mb-12 lg:py-24 bg-white">
             <div>
-                <p class="font-pops text-2xl font-semibold text-lg mb-14">
-                    Companies where our students are working
-                </p>
-            </div>
-            <div class="grid grid-cols-2 gap-10 text-center lg:grid-cols-8">
-                <div class="flex items-center justify-center lg:w-7/12 pN:w-8/12 pN:pl-16">
-                    <img class="" src="https://cdn.worldvectorlogo.com/logos/indigo-airlines-logo.svg" alt="Todoist Logo" class="block object-contain h-12" />
+                <div class="text-center pt-5 mb-20 ">
+                    <p class="text-4xl font-semibold text-bluegray-900">Our Students are working at .</p>
                 </div>
-                <div class="flex items-center justify-center lg:w-7/12 pN:w-9/12 pN:pl-16">
-                    <img src="https://cdn.worldvectorlogo.com/logos/qatar-airways-1.svg" alt="Slack Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center lg:w-7/12 pN:w-7/12 pN:pl-16">
-                    <img src="https://seeklogo.com/images/G/gvk-logo-5FDE6F789A-seeklogo.com.png" alt="Typeform Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://cdn.worldvectorlogo.com/logos/radisson-1.svg" alt="Algolia Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://cdn.worldvectorlogo.com/logos/sheraton-hotels-resorts-1.svg" alt="Postcss Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://cdn.worldvectorlogo.com/logos/itc-limited.svg" alt="TailwindCSS Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://cdn.worldvectorlogo.com/logos/le-meridien.svg" alt="Discord Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://cdn.worldvectorlogo.com/logos/singapore-airlines.svg" alt="Vimeo Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://cdn.worldvectorlogo.com/logos/emirates-airlines.svg" alt="Campfire Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://cdn.worldvectorlogo.com/logos/airasia.svg" alt="Android Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://getlogo.net/wp-content/uploads/2020/04/bookmyshow-logo-vector.png" alt="Atlassian Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://1000logos.net/wp-content/uploads/2020/09/Air-India-logo.png" alt="Apple Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://logos-download.com/wp-content/uploads/2019/07/Dainik_Bhaskar_Logo-700x275.png" alt="Google Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://logodix.com/logo/1938508.png" alt="Zeplin Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://www.logo.wine/a/logo/Vistara/Vistara-Logo.wine.svg" alt="VSCode Logo" class="block object-contain h-12" />
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="https://logodix.com/logo/1270657.jpg" alt="Ycombinator Logo" class="block object-contain h-12" />
-                </div>
-            </div>
-
-        </section>
-
-        <!-- types of course  -->
-        <section class="font-pops bg-gray-50 lg:px-20 ">
-            <div class=" px-7 py-24 mx-auto lg:px-20">
-                <div class="flex flex-wrap w-full mb-20">
-                    <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-                        <h1 class="pN:text-3xl text-2xl font-semibold title-font mb-2 font-pops  ">Our Course Catogories
-                        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                <div class="swiper-container mySwiper ">
+                    <div class="swiper-wrapper  items-center">
+                        <!-- Slides -->
+                        <div class="swiper-slide "><img src="./resources/aa/logo1-airindia.jpg" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo2-spicejet.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo3-jet2.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo4-indigo.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo5-goair.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo6-singapore.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo7-qatar.jpg" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo8-emirates.jpg" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo9-airasia.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo10-itchotel.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo11-taj.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo12-gvk.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo13-bms.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo14-flemingo.jpg" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo15-mariot.png" alt="" width="70"></div>
+                        <div class="swiper-slide "><img src="./resources/aa/logo15-vistara.jpg" alt="" width="70"
+                                class=""></div>
                     </div>
-                    <p class="lg:w-1/2 w-full text-lg ">At Aeron Academy our goal is to 
-                        offer students many choices of courses from various industries. We Offer training 
-                        programs in five different catogaries.
-                     </p>
                 </div>
-                <div class="  flex flex-wrap justify-center gap-10 mx-auto">
-                    <div class="lg:w-5/12 md:w-1/2 px-4 pt-4 rounded bg-white shadow-lg">
-                        <a href="./courses.html#ah">
-                            <div class=" bg-coolgray-200 pt-1 rounded-lg">
-                                <img class="w-full rounded object-cover object-center mb-6"
-                                    src="./resources/aa/aa1.jpg" alt="content">
-                                <h2 class="font-semibold text-2xl mb-5">Aviation & Hospitality</h2>
-                                    <p class="mb-5">Makes you a perfect candidate to work in
-                                    any department of an Airport, Airlines or Hotels globally.
-                                    Courses in this segment aiming at transforming aspiring candidates into Airline Cabin Crew, Airport
-                                    Ground Operations and Aviation Retail professionals.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lg:w-5/12 md:w-1/2 p-4 rounded bg-white shadow-lg">
-                        <a href="./courses.html#cpl">
-                            <div class="bg-coolgray-200 pt-1 rounded-lg">
-                                <img class="w-full rounded object-cover object-center mb-6" src="./resources/aa/aa3.jpg"
-                                    alt="content">
-                                <h2 class="font-semibold text-2xl mb-2">Commercial
-                                Pilot License</h2>
-                                <p class="mb-2">As an airline pilot, you’ll fly passengers or cargo on long or short-haul flights for leisure, business or commercial
-                                purposes.Commercial Pilot License with Multi-Engine Rating & DGCA Conversion requirements.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lg:w-5/12 md:w-1/2 p-4 rounded bg-white shadow-lg">
-                        <a href="./courses.html#hm">
-                            <div class="bg-coolgray-200 pt-1 rounded-lg">
-                                <img class="w-full rounded object-cover object-center mb-6" src="./resources/aa/aa9.jpg"
-                                    alt="content">
-                                <h2 class="font-semibold text-2xl mb-2">Hotel Management</h2>
-                                <p>With globalization the scope and need of the hotel industry is increasing day by day and thus generating numbers of job
-                                opportunities and career growth prospects.A hotel managements certification has huge scope in the service industry</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="lg:w-5/12 md:w-1/2 p-4 rounded bg-white shadow-lg">
-                        <a href="./courses.html#em">
-                            <div class="bg-coolgray-200 pt-1 rounded-lg">
-                                <img class="rounded w-full object-cover object-center mb-6" src="./resources/aa/aa4.jpg"
-                                    alt="content">
-                                <h2 class="font-semibold text-2xl mb-2">Event Managment</h2>
-                                <p>Event management involves the creation, direction and planning of all kinds of events. Event
-                                managements is the co-ordination, running and planning of all the recourses, teams and
-                                features that comes together to create every kind of event.</p>
-                            </div>
-                        </a>
-                    </div>
             </div>
         </section>
 
 
-        <!-- cta phone and name section  -->
-        <section class="bg-purpltint-1000 py-10 px-7 lg:px-20">
-        
-            <div class="container mx-auto text-center flex flex-col items-center">
-        
-                <!-- text  -->
-                <div class="mb-5">
-                    <p class="text-white font-pops text-2xl pN:text-xl">
-                        Still having queries?
-                    </p>
-                    <p class=" py-2 text-white text-3xl lg:text-5xl font-play font-semibold">
-                        Get a Free Consultation on phone with us
-                    </p>
-                </div>
-        
-                <!-- form input and button  -->
-                <div class="flex flex-col lg:space-y-0 space-y-4 mb-3 font-pops text-white 
-                lg:flex-row  lg:items-center lg:text-xl lg:space-x-10 ">
-                    <div class="lg:mr-0 lg:flex lg:flex-col lg:items-start ">
-                        <label class="text-lg" for="">Name</label>
-                        <input class=" form-input text-black rounded px-2 lg:py-1 lg:px-10 px-8 py-2" type="text" name="" id="" placeholder="Full Name">
+        <!-- cta + popular  -->
+        <div class="bg-fixed bg-cover " style="background-image: url(./resources/aa/qweblob.svg)">
+            <!-- cta  -->
+            <section class="pN:pb-24 pN:mb-28 py-56">
+                <div class="font-pops  text-white lg:px-32 px-5 flex flex-col pN:flex-col-reverse  ">
+                    <div class="bg-blacktint-900 rounded py-20 px-16 pN:text-center ">
+                        <p class="text-4xl font-semibold text-yellow-300 mb-4 mr-auto">Download our student help book</p>
+                        <p class="text-xl font-medium mb-10 mr-auto">it has all the details about courses offered,admission
+                            details and process.</p>
+                        <button class="px-6 py-3 bg-yellow-300 text-black rounded font-semibold btn-open hover:bg-yellow-400">Download
+                            Now</button>
+                        <!-- <a href="" class="px-6 py-3 bg-yellow-300 text-black rounded font-semibold btn-open " >Download Now</a> -->
                     </div>
-                    <div class="lg:flex lg:flex-col lg:items-start">
-                        <label class="text-lg" for="">Phone</label>
-                        <input class="text-black rounded px-2 lg:py-1 lg:px-10 px-8 py-2" type="text" name="" id="" placeholder="Phone Number">
-                    </div>
-
-                    <div class="lg:self-end lg:pb-0">
-                        <button class=" bg-white text-bluegray-900 px-4 py-2 lg:px-6 lg:py-2 text-xl
-                                rounded-lg lg:text-lg lg:font-semibold">Call me <i
-                                class="lg:pl-2 bi bi-telephone-inbound-fill"></i></button>
-                    </div>
-                    
-
-                </div>
-        
-            </div>
-        
-        
-        </section>
-
-        <!-- popular courses section  -->
-        <section class="lg:px-20 bg-scroll bg-cover" style="background-image: url(./resources/aa/blob222.svg);">
-            <!-- [wrapper div]  -->
-            <div class="flex flex-col items-center container mx-auto font-pops py-3 lg:px-20 lg:pt-20">
-                <!-- text content  -->
-                <div class="flex flex-col items-center text-center px-10">
-                    <p class=" pN:mt-16 md:mt-16 font-semibold text-2xl">
-                        Our Most Popular Courses
-                    </p>
-                    <p class="text-xl pN:hidden lg:px-44 lg:py-5">
-                        Aeron Academy Offer Various training coursed in
-                        number of different fields. Our Courses syllabus 
-                        consist of modern relevant subjects and materials. 
-                        We curated our course by consulting senior officials 
-                        works in aviation and hospitality industry.
-                    </p>
-                </div>
-
-                <!-- courses content  -->
-                <div class="flex gap-3 lg:gap-10 flex-wrap items-center justify-center mt-5">
-
-                    <!-- course 1/6  -->
-                    <div class="hover:shadow-2xl transform hover:scale-105 bg-white rounded-2xl shadow-md w-3/4 p-2 
-                    lg:w-1/4 lg:h-64 lg:flex lg:flex-col lg:justify-between">
-                        <div>
-                            <P class="  font-semibold rounded-xl pl-2 font-robo bg-purpltint-1000 text-white text-lg">Advance Diploma</P>
-                            <p class=" pl-2 py-2 mt-5font-robos  font-bold text-2xl text-bluegray-800">Aviation Management & Hospitality</p>
-                            <p class="pl-2 pb-1">*Domestic & International Program Options</p>
-                            <p class="pl-2">*Amadeus Training Included</p>
-                        </div>
-                        <div class="flex font-robo items-center justify-evenly">
-                            <p>~Full Time</p>
-                            <p>~12 Months</p>
-                        </div>
-                    </div>
-
-                    <!-- course 2/6  -->
-                    <div class=" hover:shadow-2xl transform hover:scale-105 bg-white rounded-2xl shadow-md w-3/4 p-2 
-                    lg:w-1/4 lg:h-64 lg:flex lg:flex-col lg:justify-between">
-                        <div>
-                            <P class="  font-semibold rounded-xl pl-2 font-robo bg-purpltint-1000 text-white text-lg">Advance Certification</P>
-                            <p class=" pl-2 py-2 mt-5font-robos  font-bold text-2xl text-bluegray-800">Cabin & Hospitality</p>
-                            <p class="pl-2 pb-1">*Fast-track Course</p>
-                            <p class="pl-2">*Selection is based on valid FAST exam score & Personal Interview</p>
-                        </div>
-                        <div class="flex font-robo items-center justify-evenly">
-                            <p>~Full Time</p>
-                            <p>~3 Months</p>
-                        </div>
-                    </div>
-
-                    <!-- course 3/6  -->
-                    <div class=" hover:shadow-2xl transform hover:scale-105 bg-white rounded-2xl shadow-md w-3/4 p-2 
-                    lg:w-1/4 lg:h-64 lg:flex lg:flex-col lg:justify-between">
-                        <div>
-                            <P class="  font-semibold rounded-xl pl-2 font-robo bg-purpltint-1000 text-white text-lg">Advance Certification</P>
-                            <p class=" pl-2 py-2 mt-5font-robos  font-bold text-2xl text-bluegray-800">Airport Operations & Hospitality</p>
-                            <p class="pl-2 pb-1">*Fast-track Course</p>
-                            <p class="pl-2">*Selection is based on valid FAST exam score & Personal Interview</p>
-                        </div>
-                        <div class="flex font-robo items-center justify-evenly">
-                            <p>~Full Time</p>
-                            <p>~4 Months</p>
-                        </div>
-                    </div>
-
-                        <!-- course 4/6  -->
-                    <div class=" hover:shadow-2xl transform hover:scale-105 bg-white rounded-2xl shadow-md w-3/4 p-2 
-                    lg:w-1/4 lg:h-64  lg:flex lg:flex-col lg:justify-between ">
-                        <div>
-                            <P class="  font-semibold rounded-xl pl-2 font-robo bg-purpltint-1000 text-white text-lg">BBA</P>
-                            <p class=" pl-2 py-2 mt-5font-robos  font-bold text-2xl text-bluegray-800">Aviation Operations</p>
-                            <p class="pl-2 pb-1">*Integrated Diploma & Degree Program Options</p>
-                            <p class="pl-2"></p>
-                        </div>
-                        <div class="flex font-robo items-center justify-evenly">
-                            <p>~Full Time</p>
-                            <p>~36 Months</p>
-                        </div>
-                    </div>
-
-                        <!-- course 5/6  -->
-                    <div class=" hover:shadow-2xl transform hover:scale-105 bg-white rounded-2xl shadow-md w-3/4 p-2 
-                    lg:w-1/4 lg:h-64 lg:flex lg:flex-col lg:justify-between">
-                        <div>
-                            <P class="  font-semibold rounded-xl pl-2 font-robo bg-purpltint-1000 text-white text-lg">Advance Diploma</P>
-                            <p class=" pl-2 py-2 mt-5font-robos  font-bold text-2xl text-bluegray-800">Hotel & Tourism Management</p>
-                            <p class="pl-2 pb-1">*Includes TATA Strive Food & Beverage Steward Module</p>
-                            <p class="pl-2"></p>
-                        </div>
-                        <div class="flex font-robo items-center justify-evenly">
-                            <p>~Full Time</p>
-                            <p>~12 Months</p>
-                        </div>
-                    </div>
-
-                        <!-- course 6/6  -->
-                    <div class="hover:shadow-2xl transform hover:scale-105 bg-white rounded-2xl shadow-md w-3/4 p-2 
-                    lg:w-1/4  lg:flex lg:flex-col lg:justify-between">
-                        <div>
-                            <P class="  font-semibold rounded-xl pl-2 font-robo bg-purpltint-1000 text-white text-lg">License</P>
-                            <p class=" pl-2 py-2 mt-5font-robos  font-bold text-2xl text-bluegray-800">Commercial Pilot License</p>
-                            <p class="pl-2 pb-1">*Training Options in South Africa, USA and Philippines</p>
-                            <p class="pl-2">*DGCA Ground Training & License Conversion with additional 3-6 Months Training</p>
-                        </div>
-                        <div class="flex font-robo items-center justify-evenly ">
-                            <p>~Full Time</p>
-                            <p>~12 Months</p>
-                        </div>
+                    <div class="">
+                        <img src="./resources/aa/year2021.png" alt=""
+                            class="lg:w-3/12 w-3/4 pN:mx-auto lg:z-10 lg:ml-auto lg:-mt-96 lg:pr-12 rounded-">
                     </div>
                 </div>
-                <!-- see all courses button  -->
-                <a href="./courses.html" class="lg:py-10">
-                    <button class=" my-5 text-lg px-5 py-3 text-white bg-purpltint-900 hover:bg-purpltint-700  
-                    hover:shadow-lg rounded">
-                        See All Courses >
-                    </button>
-                </a>
-
-            </div>
-
-
-        </section>
-
-        <!-- About Us Section  -->
-        <section id="aboutus" class=" px-5 lg:px-20">
-
-            <!-- [wrapper div]  -->
-            <div class="container mx-auto font-pops
-                        lg:w-3/5 lg: py-44">
-
-                <!-- about(who we are)  -->
-                <div class="flex flex-col text-center items-center bg-gray-50 pt-10
-                            lg:flex-row lg:bg-gray-100 lg:border-l-8 lg:border-r-8 lg:border-t-8
-                            lg:shadow-xl lg:rounded-lg ">
-                    <p class="text-3xl font-semibold 
-                            lg:flex-1">
-                        Who We are ?
-                    </p>
-                    <p class="px-10 py-10 text-lg
-                            lg:flex-1 lg:text-left">
-
-                        Aeron Academy is a leading aviation school in raipur city. Our vision is to give
-                        our students the appropiate in demand skills training and knowledge in the field of
-                        Aviation,Hospitality,Hotel & Event Managment.With our higly trained faculties and instructors
-                        training , our students are now working in major global and international companies.
-                     
-                    </p>
-                </div>
-
-                <!-- stats  -->
-                <div class="flex items-center text-center justify-center space-x-5 bg-black px-5 py-5 
-                            lg:rounded-b-lg">
-
-                    <div class="w-2/4">
-                        <p class="text-purple-500 text-2xl font-semibold">3500+</p>
-                        <p class="text-white ">
-                            Students Trained and Placed in Leading Airlines and Hotels.
+            </section>
+            <!-- popular courses  -->
+            <section class="font-pops  lg:py-20 pN:pb-28  " >
+                <div class="lg:px-32 px-5">
+                    <!-- section heading text  -->
+                    <div class="text-center mb-16 ">
+                        <p class="font-semibold text-4xl mb-8">Most popular courses</p>
+                        <p class="lg:px-40 font-medium text-lg ">Although aeron academy have many different courses in
+                            different catogaries , these are some of our most popular courses which have maximum number
+                            of students.
                         </p>
                     </div>
+                    <!-- cards wrapper  -->
+                    <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-5 lg:mb-12 pb-20 lg:w-11/12 mx-auto ">
 
-                    <div class="w-2/4">
-                        <p class="text-purple-500 text-2xl font-semibold">20,000+</p>
-                        <p class="text-white">
-                            Individuals Trained By Our Corporate Training Programs
-                        </p>
+                        <!-- card 1  -->
+                        <div class=" flex flex-col p-5 shadow-xl rounded bg-white lg:h-80">
+                            <div class="bg-blacktint-800 text-white py-3 px-3 font-medium">
+                                <p>Advance Diplom</p>
+                                <p>~12 Months</p>
+                            </div>
+                            <div class="text-white bg-purpltint-900 py-3 px-3">
+                                <h2 class="text-3xl mb-3 font-semibold">Aviation and Hospitality Managment</h2>
+                                <p class="">*Domestic & International Program Options</p>
+                                <p class="">*Amadeus Training Included</p>
+
+                            </div>
+                            <div class="py-3 px-3 bg-bluegray-100">
+                                <a href="./courses.html#ah" class="font-medium hover:text-purpltint-900 hover:underline">Full Details ></a>
+                            </div>
+                        </div>
+
+                        <!-- card 2  -->
+                        <div class=" flex flex-col p-5 shadow-xl rounded bg-white lg:h-80">
+                            <div class="bg-blacktint-800 text-white py-3 px-3 font-medium">
+                                <p>Advance Certification</p>
+                                <p>~3 Months</p>
+                            </div>
+                            <div class="text-white bg-purpltint-900 py-3 px-3">
+                                <h2 class="text-3xl mb-3 font-semibold">Cabin Crew and Hospitality</h2>
+                                <p class="">*Fast-track Course</p>
+                                <p class="lg:mb-3">*Selection is based on valid FAST exam score & Personal Interview</p>
+                        
+                            </div>
+                            <div class="bg-bluegray-100 py-3 px-3 ">
+                                <a href="./courses.html#ah" class="font-medium hover:text-purpltint-900 hover:underline">Full Details ></a>
+                            </div>
+                        </div>
+
+                        <!-- card 3  -->
+                        <div class=" flex flex-col p-5 shadow-xl rounded bg-white lg:h-80">
+                            <div class="bg-blacktint-800 text-white py-3 px-3 font-medium">
+                                <p>BBA</p>
+                                <p>~3 Years</p>
+                            </div>
+                            <div class="text-white bg-purpltint-900 py-3 px-3">
+                                <h2 class="text-3xl mb-3 font-semibold">Aviation Operations</h2>
+                                <p class="">*Integrated Diploma & Degree Program Optionss</p>
+                                <p class="lg:mb-16"></p>
+                        
+                            </div>
+                            <div class="bg-bluegray-100 py-3 px-3 ">
+                                <a href="./courses.html#ah" class="font-medium hover:text-purpltint-900 hover:underline">Full Details ></a>
+                            </div>
+                        </div>
+
+                        <!-- card 4  -->
+                        <div class=" flex flex-col p-5 shadow-xl rounded bg-white lg:h-80">
+                            <div class="bg-blacktint-800 text-white py-3 px-3 font-medium">
+                                <p>Advance Diploma</p>
+                                <p>~12 Months</p>
+                            </div>
+                            <div class="text-white bg-purpltint-900 py-3 px-3">
+                                <h2 class="text-3xl mb-3 font-semibold">Hotel and Tourism Management</h2>
+                                <p class="">*Includes TATA Strive Food & Beverage Steward Module</p>
+                                <p class="lg:mb-7"></p>
+                        
+                            </div>
+                            <div class="bg-bluegray-100 py-3 px-3 ">
+                                <a href="./courses.html#hm" class="font-medium hover:text-purpltint-900 hover:underline">Full Details ></a>
+                            </div>
+                        </div>
+
+                        <!-- card 5 -->
+                        <div class="flex flex-col p-5 shadow-xl rounded bg-white lg:h-80">
+                            <div class="bg-blacktint-800 text-white py-3 px-3 font-medium">
+                                <p>License Training</p>
+                                <p>~3 Months</p>
+                            </div>
+                            <div class="text-white bg-purpltint-900 py-3 px-3">
+                                <h2 class="text-3xl mb-3 font-semibold">Commercial Pilot License</h2>
+                                <p class="">*Training Options in South Africa, USA and Philippines</p>
+                                <p class="lg:mb-4">*DGCA Ground Training & License Conversion with additional 3-6 Months Training</p>
+                        
+                            </div>
+                            <div class="bg-bluegray-100 py-3 px-3 ">
+                                <a href="./courses.html#cpl" class="font-medium hover:text-purpltint-900 hover:underline">Full Details ></a>
+                            </div>
+                        </div>
+
+                        <!-- card 6  -->
+                        <div class=" flex flex-col p-5 shadow-xl rounded bg-white lg:h-80">
+                            <div class="bg-blacktint-800 text-white py-3 px-3 font-medium">
+                                <p>Advance Certification</p>
+                                <p>~6 Months</p>
+                            </div>
+                            <div class="text-white bg-purpltint-900 py-3 px-3">
+                                <h2 class="text-3xl mb-3 font-semibold">Event Paramount</h2>
+                                <p class="">*Specialised Event Management Course for experienced candidates</p>
+                                <p class="lg:mb-10"></p>
+                        
+                            </div>
+                            <div class="bg-bluegray-100 py-3 px-3 ">
+                                <a href="./courses.html#em" class="font-medium hover:text-purpltint-900 hover:underline">Full Details ></a>
+                            </div>
+                        </div>
+
                     </div>
 
+                    <div class="text-center item-center ">
+                        <a href="./courses.html" class="rounded font-semibold text-white px-8 py-5 bg-purpltint-900 hover:bg-purpltint-700 hover:underline">See all courses
+                            ></a>
+                    </div>
                 </div>
+            </section>
+        </div>
+
+        <!-- cta 2  -->
+        <section class="font-pops">
+            <div class="lg:px-32 px-5 text-center cta2-custom-bg text-white py-20">
+                <div class="mx-auto">
+                    <p class="text-4xl font-semibold mb-5 ">Need Help? <span class="text-yellow-300">Talk with an
+                            Expert</span></p>
+                    <p class="text-2xl font-medium mb-12 lg:px-24">If you still have some doubts and questions , our
+                        councellors and teacher's can guide you
+                        by <span class="text-yellow-300">answering all your questions</span> on a phone call with you.
+                    </p>
+                </div>
+
+                <div class="mx-auto">
+                    <form  name="downloadbrouchure2" id="downloadbrouchure2">
+
+                        <div class="text-lg pN:mx-auto">
+                            <label class="mr-1 font-semibold " for="">Your Name :</label>
+                            <input class="mr-8 text-black  px-8 py-2 " type="text" name="Name" id=""
+                                placeholder="Your Full Name" required>
+
+                            <label class="font-semibold" for="mr-1">Phone Number :</label>
+                            <input class="mr-8 px-8 py-2 text-black" type="text" name="Phone" id=""
+                                placeholder="Your Phone Number"  pattern="[789][0-9]{9}" required>
+
+                                <input type="text" id="datetime10" name="Time" value="" hidden>
+
+                            <button class=" pN:mt-10  font-semibold rounded text-xl px-10 py-4 bg-yellow-300 text-bluegray-900 
+                        hover:bg-yellow-400 text-white " type="submit" id="rinformation">Requqest Information <i
+                                    class="bi bi-telephone-inbound"></i></button>
+                        </div>
+
+                    </form>
+                    <div>
+
+
+                    </div>
+        </section>
+
+        <!-- about us  -->
+        <section class=" font-pops px-32 pN:px-5 text-bluegray-900 bg-white py-32">
+            <div class="flex  mx-auto pN:flex-col-reverse">
+                <div class=" mx-auto pN:my-8 mr-14">
+                    <div class="flex items-end justify-center lg:justify-start gap-5 mb-6 ">
+                        <img src="./resources/aa/brand-real3.jpg " alt=""
+                            class="w-5/12 rounded-md shadow-xl filter brightness-75">
+                        <img src="./resources/aa/brand-real1-c.jpg" alt=""
+                            class="w-5/12 rounded-md shadow-xl filter brightness-75">
+                    </div>
+                    <div class="flex items-start justify-center lg:justify-start gap-5 ">
+
+                        <img src="./resources/aa/brand-real2-c.jpg" alt=""
+                            class="w-4/12 rounded-md shadow-xl filter brightness-75">
+                        <img src="./resources/aa/brand-real5-c.jpg" alt=""
+                            class="w-5/12 rounded-md shadow-xl filter brightness-75">
+                    </div>
+                </div>
+
+                <div class=" my-auto pN:items-center pN:text-center ">
+                    <p class="text-lg text-purpltint-700 mb-2 font-semibold ">About us</p>
+                    <p class="text-4xl font-semibold mb-3">Raising world class proffesional in Aviation and related
+                        industries</p>
+                    <p class="pr-5 mb-12 text-lg">Our courses are designed by our experts after consulting industry
+                        senior officials who have
+                        real inside knowledge and data in their industries.Our training courses are updated regualrly
+                        with in deamnd skills
+                        for job placements.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 text-lg items-center font-semibold text-blacktint-800 ">
+                        <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span> Internship Gurantee
+                        </p>
+                        <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>International Partnerships</p>
+                        <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>Ex-Industry Experts faculties </p>
+                        <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>World class infrastructure </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- stats  -->
+        <section class="font-pops  px-32 pN:px-5 pN:mb-28 bg-white py-20">
+            <div class=" pN:px-2 px-16 ">
+
+                <div
+                    class="bg-gradient-to-b text-white from-blacktint-1000 via-blacktint-900 to-blacktint-800 text-center pb-20 pt-12">
+                    <p class="text-4xl font-semibold mb-5">Why study at Aeron Academy </p>
+                    <p class="px-48 pN:px-8 font-medium p">I am really satisfied with my Aeron Academy. I would be lost
+                        without Aeron Academy.
+                        Aeron Academy is worth much more .than I paid
+                        I am really satisfied with my Aeron Academy. </p>
+                </div>
+
+                <div class="w-9/12 mx-auto -mt-12 mb-12 rounded shadow-xl">
+                    <div class="rounded text-center bg-white flex justify-between pN:flex-wrap py-8 ">
+                        <div class="lg:border-r-2 flex-1 pN:border-b-2 pN:pb-3">
+                            <P class="font-medium text-lg">Students</P>
+                            <P class="font-semibold text-purpltint-700 text-4xl">20K+</P>
+                        </div>
+                        <div class="lg:border-l-2 lg:border-r-2  flex-1 pN:border-b-2  ">
+                            <P class="font-medium text-lg">Placements</P>
+                            <P class="font-semibold text-purpltint-700 text-4xl">3.5k+</P>
+                        </div>
+                        <div class="lg:border-l-2 lg:border-r-4 flex-1 pN:pt-3">
+                            <P class="font-medium text-lg">Faculties</P>
+                            <P class="font-semibold text-purpltint-700 text-4xl">50+</P>
+                        </div>
+                        <div class="  flex-1 pN:pt-3">
+                            <P class="font-medium text-lg">Courses</P>
+                            <P class="font-semibold text-purpltint-700 text-4xl">20+</P>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </section>
+
+
+
+        <!-- testimonial 2  -->
+        <section class="bg-white lg:py-24">
+        
+            <div class="flex items-center justify-between lg:px-32 mb-14 font-pops
+                                pN:flex-wrap pN:px-5">
+        
+                <!-- left text  -->
+                <div class=" w-full pN:text-center">
+                    <p class="text-4xl text-bluegray-900 font-semibold mb-5">Our success stories</p>
+                    <p class="lg:pr-20 text-bluegray-900 font-robo text-xl pN:mb-5">Here are just few out of many success
+                        stories from our
+                        students about how aeron helped
+                        them.
+        
+                    </p>
+                </div>
+        
+                <!-- right cards container  -->
+                <div class="flex flex-col justify-end">
+                    <div class="px-32 pN:px-5 space-y-10">
+                        <!--  card1    -->
+                        <div class=" bg-white p-5 shadow-xl flex flex-row-reverse pN:flex-col items-center rounded 
+                                                    rounded-t-lg border-t-8 border-blacktint-800 ">
+                            <div class=" w-4/12 pN:w-3/12 ">
+                                <img class=" mx-auto rounded-full " src="./resources/aa/testface1.jpg" alt="">
+                            </div>
+        
+                            <div class=" text-left">
+                                <p class="text-4xl pN:text-2xl font-semibold text-purpltint-700">“</p>
+                                <p class=" mb-5 lg:text-lg w-11/12 ">
+                                    I am now a crew member in emirates. At Aeron i was taught by ex-industry experts and there were many mock classes, thanks
+                                    to that i was prepared for my job from day 1.</p>
+        
+                                <p class="font-semibold left"> <span class="text-purpltint-900">Sukriti Devangan/span> /
+                                    <span class="text-gray-600">Aviation and Hospitality</span>
+                                </p>
+                            </div>
+                        </div>
+        
+                        <!--  card2    -->
+                        <div class=" bg-white p-5 shadow-xl flex flex-row-reverse pN:flex-col items-center rounded 
+                                                                            rounded-t-lg border-t-8 border-blacktint-800 ">
+                            <div class=" w-4/12 pN:w-3/12 ">
+                                <img class=" mx-auto rounded-full " src="./resources/aa/testface2.jpg" alt="">
+                            </div>
+        
+                            <div class=" text-left">
+                                <p class="text-4xl pN:text-2xl font-semibold text-purpltint-700">“</p>
+                                <p class=" mb-5 lg:text-lg w-11/12 ">
+                                    I had never sat on a airplane before, but i was fascinated by them. Never imagined I would fly one myself. Aeron made my
+                                    goals true.</p>
+        
+                                <p class="font-semibold left"> <span class="text-purpltint-900">Ramesh Sahoo</span> /
+                                    <span class="text-gray-600">Commercial Pilot</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--  card3    -->
+                        <div class=" bg-white p-5 shadow-xl flex flex-row-reverse pN:flex-col items-center rounded 
+                                                                            rounded-t-lg border-t-8 border-blacktint-800 ">
+                            <div class=" w-4/12 pN:w-3/12 ">
+                                <img class=" mx-auto rounded-full " src="./resources/aa/testface3.jpg" alt="">
+                            </div>
+        
+                            <div class=" text-left">
+                                <p class="text-4xl pN:text-2xl font-semibold text-purpltint-700">“</p>
+                                <p class=" mb-5 lg:text-lg w-11/12 ">
+                                    What I was before joining and after passing out as a Graduate, are two different person. Not only provides with
+                                    intensive knowledge, hands on experience, professional skills and confidence to excel in this challenging industry</p>
+        
+                                <p class="font-semibold left"> <span class="text-purpltint-900">Prateek Chandwani</span> /
+                                    <span class="text-gray-600">Aviation and Hospitality</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <!-- cta 3  -->
+        <section>
+
+            <div class="font-pops bg-blacktint-1000 text-white flex flex-wrap items-center justify-around py-10 
+                        px-10 bg-gradient-to-tr from-blacktint-1000 to-blacktint-800 lg:py-16">
+                <div>
+                    <p class="font-semibold text-3xl text-center mb-8 lg:mb-0 lg:text-4xl">Ready to study at Aeron?</p>
+                </div>
+
+                <div class=" flex flex-col font-semibold lg:flex-row items-center">
+                    <a href="./contactUs.html" class="rounded bg-purpltint-900 px-10 py-4 mb-8 shadow-lg
+                                hover:bg-purpltint-300 hover:shadow-2xl lg:mb-0 lg:mr-5">Apply ></a>
+                    <a href="tel:18005723791" class="rounded bg-purpltint-300 px-10 py-4 shadow-lg
+                               hover:shadow-2xl hover:bg-purpltint-200 mb-3 lg:mb-0 ">Call us</a>
+                </div>
+            </div>
+
+        </section>
+
+
+
 
     </main>
 
 
-    <footer class=" bg-gray-200 flex flex-wrap items-center justify-between px-6 py-4 bg-white  pN:flex-col pN:justify-center">
-        
-        <div class="pN:w-10/12 ">
-            <a href="./index.html">
-                <img src="./resources/aa/aeron-acaademy-logo-purple.png" class="w-4/12 pN:mx-auto ">
-            </a>
+
+    <!-- footer 2.0  -->
+    <footer class="font-pops ">
+
+        <div class="flex justify-between items-center bg-gray-100 px-10 py-10
+                    pN:flex-wrap pN:justify-center bg-purpltint-1100 text-white lg:py-20
+                    pN:text-lg">
+
+            <div class="lg:w-full pN:border-b-2 pN:border-blacktint-200">
+                <img class="w-4/12 mb-3 pN:mx-auto" src="./resources/aa/aeron-text-logo-white.png" alt="">
+                <p class="lg:pr-40 pN:mx-auto pN:mb-8 pN:text-center">Best AASSC & NSDC certified training institute for
+                    aviation and hospitality in Chhattisgarh </p>
+            </div>
+
+            <div class=" my-auto border-l-2 border-blacktint-200 flex w-full flex-col items-center
+                        pN:border-l-0  ">
+                <br>
+                <p class="font-semibold underline mb-3 pN:mx-auto text-lg">Dowload Brochure</p>
+                <a class="pN:mb-3 pN:mx-auto px-20 py-4 rounded bg-purple-100 text-black font-semibold
+                        hover:bg-purple-50 shadow-xl hover:shadow-2xl" id="footerdownload">Download</a>
+                <br>
+
+
+            </div>
+
+            <div class=" border-l-2 border-blacktint-200 flex flex-col w-full
+                        pN:border-l-0 pN:border-t-2 pN:text-center">
+                <div class="px-10">
+                    <p class="mb-3 underline font-semibold pN:mt-8 text-lg">Get in Touch</p>
+                    <p class="mb-1"> <span><i class="bi bi-telephone-fill"></i> <br class="lg:hideen md:hidden"> </span>
+                        : 1800-572-3791</p>
+                    <p class="mb-1"> <span><i class="bi bi-envelope-fill"></i> <br class="lg:hideen md:hidden"></span> :
+                        contact@aeronacademy.com</p>
+                    <p class="mb-1"> <span><i class="bi bi-house-fill"></i><br class="lg:hideen md:hidden"></span> :
+                        C-54, Second Floor, near Shree Narayana Hospital,
+                        Sector 5, Devendra Nagar.Raipur, Chhattisgarh 492001</p>
+                </div>
+            </div>
+
+
         </div>
 
-        <div class="flex flex-col lg:w-3/12 pN:items-center">
-            <a href="tel:1800-572-3791" class="mb-3 pN:mt-3 pN:text-center">Phone:<strong> 1800-572-3791</strong></a>
-            <p class=" pN:text-center">C-54, Second Floor, near Shree Narayana Hospital, Sector 5, Devendra Nagar.Raipur, Chhattisgarh 492001</p>
+        <div class=" px-10 py-5 bg-gray-200 font-noto font-light flex justify-between 
+                    pN:flex-wrap ">
+            <p class="pN:mx-auto">©2021 Aeron Academy.All Rights Reserved</p>
+            <p class="pN:mx-auto"> Made By therohitmishra.com</p>
         </div>
-    
     </footer>
 
-    <!-- JS $ OTHER CDN's  -->
 
-    <!-- ---------------- --->
-    
+
+    <!-- js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./formcontrol.js"></script>
+    <script src="./carousel.js"></script>
+
+
+
 </body>
+
 </html>

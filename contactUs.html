@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./customcss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .custom-bg {
-            
-            background: rgb(168,57,157);
-            background: linear-gradient(90deg, rgba(168,57,157,1) 2%, rgba(47,32,103,1) 100%);
+        #contactusmodal {
+            display: none;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ393S91CL"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-RJ393S91CL');
+        </script>
 
 </head>
 <body class="font-pops">
@@ -46,7 +54,48 @@
         </div>
     </header>
     
-    <section class=" container mx-auto my-24 ">
+
+
+        <!-- exit modal  -->
+        <section class="" id="exitmodal">
+            <div class="lg:w-5/12 rounded-xl mx-auto">
+                <div class=" flex flex-col bg-bluegray-200 items-center fixed z-50 p-5 text-center" id="successmodal">
+                    <img src="./resources/aa/checked.png" alt="" class="w-2/12 my-5">
+                    <p class="font-semibold uppercase text-5xl mb-5">Success</p>
+                    <p class="text-xl mb-5">You will recieve a call from us very shortly</p>
+                    <a href="./index.html" class="px-6 py-4 bg-green-500 texxt-white rounded font-semibold mb-5 ">Close</a>
+                    
+                </div>
+            </div>
+            <div class="bg-black opacity-50" id="succes-submit">
+            </div>
+
+        </section>
+
+
+    <!-- //address,phone  -->
+    <section class="  font-pops w-full">
+        <!-- phone email  -->
+        <div class="grid grid-cols-3 pN:grid-cols-1 rounded-lg bg-purple-100 py-12 shadow-xl ">
+            <div class="flex flex-col items-center">
+                <img src="./resources/aa/smartphone.png" class="w-2/12" alt="">
+                <p class="font-semibold text-lg">1800-572-3791</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./resources/aa/emaillogo.png" class="w-2/12" alt="">
+                <p class="font-semibold text-lg">contact@aeronacademy.com</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img src="./resources/aa/map.png" class="w-2/12" alt="">
+                <p class="font-semibold text-lg px-16">C-54, Second Floor, near Shree Narayana Hospital, Sector 5, Devendra Nagar.Raipur, Chhattisgarh 492001</p>
+            </div>
+        </div>
+    
+        <!-- address  -->
+    </section>
+
+    <!-- form  -->
+    <section class=" container mx-auto w-full pN:my-5 " >
         <div class="  flex flex-col px-5 items-center
         lg:flex-row">
             <div class=" custom-bg flex flex-wrap flex-1 text-white font-semibold items-center space-y-10  px-8 
@@ -57,38 +106,40 @@
             </div>
             <div class="flex flex-1 justify-center bg-gray-100 p-4">
 
-                <form action="" class="" >
+                <form  class="" name="contactusform" id="contactform">
 
                     <!-- input 1 -->
                     <div class="flex flex-col  items-center rounded-lg text-xl my-5 ">
                         <label class="font-semibold text-bluegray-700 " for="">Full Name*</label>
-                        <input placeholder="Enter your Full Name" type="text" class="px-2 py-3 w-full rounded-lg border-2 
-                        hover:border-4 hover:shadow-inner hover:border-blue-400 ">
+                        <input name="Name" placeholder="Enter your Full Name" type="text" class="px-2 py-3 w-full rounded-lg border-2 
+                        hover:border-4 hover:shadow-inner hover:border-blue-400 " required>
                     </div>
 
                     <!-- input2  -->
                     <div class="flex flex-col items-center rounded-lg text-xl mb-5">
                         <label class="font-semibold text-bluegray-700" for="">Phone Number*</label>
-                        <input placeholder="Enter your Phone Number" type="text" class="px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400">
+                        <input name="Phone" placeholder="Enter your Phone Number" type="text" class="px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400"
+                        pattern="[789][0-9]{9}" required>
                     </div>
 
                     <!-- input 3 -->
                     <div class="flex flex-col items-center rounded-lg text-xl mb-7">
                         <label class="font-semibold text-bluegray-700" for="">Email Address*</label>
-                        <input placeholder="Enter your Email Address" type="text" class=" px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400">
+                        <input name="Email" placeholder="Enter your Email Address" type="email" class=" px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400"
+                        required>
                     </div>
 
                     <!-- input 4  -->
                     <div class="flex flex-col items-center rounded-lg text-xl mb-12">
                         <label class="font-semibold text-bluegray-700" for="">Interested Course*</label>
-                        <select name="" id="" class=" px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400">
+                        <select name="Interest" id="" class=" px-2 py-3 w-full rounded-lg border-2 hover:border-4 hover:shadow-inner hover:border-blue-400" required>
                             <optgroup class="text-lg">
                                 <option disabled selected value="">Select From List</option>
-                                <option value="">Aviation & Hospitality</option>
-                                <option value="">Aircraft Maintainance Engineering</option>
-                                <option value="">Commercial Pilot LIcense</option>
-                                <option value="">Hotel Managment</option>
-                                <option value="">Event Managment</option>
+                                <option value="Aviation & Hospitality">Aviation & Hospitality</option>
+                                <option value="Aircraft Maintainance Engineering">Aircraft Maintainance Engineering</option>
+                                <option value="Commercial Pilot LIcense">Commercial Pilot LIcense</option>
+                                <option value="Hotel Managment">Hotel Managment</option>
+                                <option value="Event Managment">Event Managment</option>
                             </optgroup>
                         </select>
                     </div>
@@ -96,13 +147,16 @@
                     <!-- input 5 -->
                     <div class="flex flex-col items-center rounded-lg text-xl mb-11">
                         <label for="" class="font-semibold text-bluegray-700">Referal Code</label>
-                        <input placeholder="Enter referal code if any" type="text" class=" px-2 py-3 w-full rounded-lg border-2 
+                        <input name="ReferalCode" placeholder="Enter referal code if any" type="text" class=" px-2 py-3 w-full rounded-lg border-2 
                                 hover:border-4 hover:shadow-inner hover:border-blue-400">
                     </div>
 
+                    <input type="text" name="Time" id="datetime2" value="" class="hidden">
+
                     <!-- submit btn -->
                     <div class="flex flex-col px-10"> 
-                    <button type="submit" class="p-5 bg-purple-500 text-white font-semibold rounded-lg">Submit Now</button>
+                        <button type="submit" class="p-5 bg-purple-500 text-white font-semibold rounded-lg">Submit Now</button>
+
                     </div>
                 </form>
 
@@ -110,22 +164,15 @@
         </div>
     </section>
 
-    <footer
-        class=" bg-gray-200 flex flex-wrap items-center justify-between px-6 py-4 bg-white  pN:flex-col pN:justify-center">
-    
-        <div class="pN:w-10/12 ">
-            <a href="./index.html">
-                <img src="./resources/aa/aeron-acaademy-logo-purple2.png" class="pN:mx-auto ">
-            </a>
-        </div>
-    
-        <div class="flex flex-col lg:w-3/12 pN:items-center">
-            <a href="tel:1800-572-3791" class="mb-3 pN:mt-3 pN:text-center">Phone:<strong> 1800-572-3791</strong></a>
-            <p class=" pN:text-center">C-54, Second Floor, near Shree Narayana Hospital, Sector 5, Devendra Nagar.Raipur,
-                Chhattisgarh 492001</p>
-        </div>
-    
+
+
+
+    <footer class="bg-gray-100 text-center font-pops">
+        <p class="font-semibold py-8 text-gray-600">Aeron Academy - 2021</p>
     </footer>
+
+    <script src="./formcontrol2.js"></script>
+
 
 
 </body>

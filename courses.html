@@ -5,13 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- style and icon  -->
     <link rel="stylesheet" href="./styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./customcss.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        #coursemodal{
+            display: none;
+        }
+        
+    </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ393S91CL"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-RJ393S91CL');
+        </script>
 
 </head>
-<body class="font-pops">
 
-    <!-- header (logo-navLinks-Button) mob done-->
+<body>
+
+     
+
+    <!-- modal 1 form  -->
+    <section class="  font-pops bg-black bg-opacity-90 modalstyle " id="coursemodal">
+        <div class=" ">
+    
+            <div class="mx-auto my-36  bg-white lg:w-4/12 pN:mx-5 modalform">
+    
+                <div class="text-right pt-2 ">
+                    <i class=" cursor-pointer bi bi-x-circle pr-5 text-2xl " id="course-btn1"></i>
+                </div>
+                <div class="px-10">
+                    <p class="text-center font-semibold text-2xl">Here is your student help book
+                        containing admisiion details and course
+                        information</p>
+                </div>
+                <div>
+                    <form class=" text-center mt-8 pb-10" name="coursedownloadfile" id="coursedownloadfile">
+                        <div class="mb-3">
+                            <label for="" class="mb-1 font-semibold">Full Name</label>
+                            <input type="text" name="Name" id="Name" placeholder="your name" required
+                                class="block mx-auto border-2 border-purpltint-900 rounded px-5 py-3">
+                        </div>
+    
+                        <div class="mb-10">
+                            <label for="" class="mb-1 text-center font-semibold">Phone Number</label>
+                            <input type="tel" name="Phone" id="Phone" placeholder="your phone number"
+                                class="block mx-auto border-2 border-purpltint-900 rounded px-5 py-3"
+                                pattern="[789][0-9]{9}" required>
+                        </div>
+    
+                        <div class="hidden">
+                            <input type="text" name="Time" id="time3" value="">
+                        </div>
+    
+                        <button type="submit"
+                            class="mx-auto bg-purpltint-900 text-white font-semibold px-8 py-3 rounded">Get my
+                            book</button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+    
+    </section>
+
+
     <header>
         <div
             class="mx-auto flex flex-col items-center p-5 w-full flex-wrap gap-2 font-pops border-2 lg:flex-row lg:justify-between">
@@ -24,534 +101,1238 @@
     
             <!-- div2 in header div  -->
             <div class="flex flex-wrap items-center text-base justify-center text-lg lg:text-base font-semibold ">
-                <a class="mr-5 hover:text-blacktint-700 hover:underline" href="./index.html">Home</a>
+                <a class="mr-5 hover:text-blacktint-700 hover:underline" href="index.html">Home</a>
                 <a class="mr-5 hover:text-blacktint-700 hover:underline" href="./index.html#aboutus">About</a>
                 <a class="mr-5 hover:text-blacktint-700 hover:underline" href="./courses.html">Courses</a>
-                <a class="mr-5 hover:text-blacktint-700 hover:underline" href="./contactUs.html">Contact Us</a>
-                <button class="pN:hidden rounded text-xl lg:text-base bg-purpltint-900 text-white
-                                        font-semibold px-4 py-3 
-                                        hover:bg-purpltint-800 hover:shadow-md
-                                        hover:rounded-md">Admission
-                    Open</button>
+                <a class="mr-5 hover:text-blacktint-700 hover:underline" href="contactUs.html">Contact Us</a>
+                <a href="./contactUs.html" class="pN:hidden rounded text-xl lg:text-base bg-purpltint-900 text-white
+                                    font-semibold px-4 py-3 
+                                    hover:bg-purpltint-800 hover:shadow-md
+                                    hover:rounded-md">Admission
+                    Open</a>
     
             </div>
     
         </div>
     </header>
-
-    <main class="px-10 bg-bluegray-100">
-
-        <section class="container mx-auto text-center lg:pt-24">
-            <p class="text-4xl">-- Our Courses --</p>
-        </section>
-        <section class="container mx-auto my-10 " id="AH">
-            <h1 class="text-3xl font-semibold">Aviation & Hospitality</h1>
-        
-            <div class="lg:flex lg:gap-5 ">
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white 
-                lg:w-1/3 lg:p-10 rounded-xl ">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Advance Diploms in Aviation
-                            Managment & Hospitality
-                        </p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae  est officiis in omnis minima? Ad
-                            quidem ea omnis.
-                
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-                
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-                        <p>
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>~Full Time</p>
-                        <p>~12 Months</p>
-                        
-                    </div>
-                
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 2</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-                
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-                
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-                
-                        <p>
-                
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-                
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 3</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-                
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-                
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-                
-                        <p>
-                
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-                
-                </div>
-            </div>
-
-        
-        </section>
-
-        <section class="container mx-auto my-10 " id="cpl">
-            <h1 class="text-3xl font-semibold">Pilot Management</h1>
-        
-            <div class="lg:flex lg:gap-5 ">
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white 
-                        lg:w-1/3 lg:p-10 rounded-xl ">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 1</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-                        <p>
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                        lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 2</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-        
-                        <p>
-        
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                        lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 3</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-        
-                        <p>
-        
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-            </div>
-        
-        
-        </section>
-
-        <section class="container mx-auto my-10 " id="hm">
-            <h1 class="text-3xl font-semibold">Hotel Managment</h1>
-        
-            <div class="lg:flex lg:gap-5 ">
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white 
-                        lg:w-1/3 lg:p-10 rounded-xl ">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 1</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-                        <p>
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                        lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 2</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-        
-                        <p>
-        
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                        lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 3</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-        
-                        <p>
-        
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-            </div>
-        
-        
-        </section>
-
-        <section class="container mx-auto my-10 " id="em">
-            <h1 class="text-3xl font-semibold">Event Managment</h1>
-        
-            <div class="lg:flex lg:gap-5 ">
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white 
-                        lg:w-1/3 lg:p-10 rounded-xl ">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 1</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-                        <p>
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                        lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 2</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-        
-                        <p>
-        
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                        lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 3</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-        
-                        <p>
-        
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-            </div>
-        
-        
-        </section>
-
-        <section class="container mx-auto my-10 " id="ae">
-            <h1 class="text-3xl font-semibold">Aircraft Service Engineering</h1>
-        
-            <div class="lg:flex lg:gap-5 ">
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white 
-                        lg:w-1/3 lg:p-10 rounded-xl ">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 1</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-                        <p>
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                        lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 2</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-        
-                        <p>
-        
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-                <div class="flex flex-col flex-wrap justy-between border-4 border-bluegray-50 shadow-lg my-5 bg-white
-                        lg:w-1/3 lg:p-10 rounded-xl">
-                    <div>
-                        <p class="text-purple-800 text-2xl">Course 3</p>
-                        <p class="text-left text py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis.
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis
-        
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nulla architecto labore, quasi eum non excepturi maxime ea
-                            officia temporibus nesciunt quae est officiis in omnis minima? Ad
-                            quidem ea omnis</p>
-        
-                        <p>
-        
-                        </p>
-                    </div>
-                    <div class="flex bg-blue-100 justify-between">
-                        <p>Random data 1</p>
-                        <p>Random Data 2</p>
-                        <p>Random Data 3</p>
-                    </div>
-        
-                </div>
-            </div>
-        
-        
-        </section>
-
-
-
-    </main>
-
-    <footer
-        class=" bg-gray-200 flex flex-wrap items-center justify-between px-6 py-4 bg-white  pN:flex-col pN:justify-center">
     
-        <div class="pN:w-10/12 ">
-            <a href="./index.html">
-                <img src="./resources/aa/aeron-acaademy-logo-purple2.png" class="pN:mx-auto ">
-            </a>
+    <section class="lg:px-32 px-5 font-pops">
+       
+       <!-- aviation  -->
+        <div>
+            <!-- course name  -->
+            <div class="bg-blacktint-800 " id="ah">
+                <h2 class="text-4xl text-white text-center font-semibold  py-5 mb-3">Aviation & Hospitality</h2>
+            </div>
+
+            <!-- course subjects  -->
+            <div>
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class=" courseheading11 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">Diploma in aviation and hospitality</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent11">
+                            <div >
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Diploma in Aviation Management and Hospitality Training designed for students for professional development and achieves
+                                    practical skills to progress within their professional careers in Aviation and hospitality management industry.
+                                    <br>
+                                    <br>
+                                    Aviation and Hospitality Management Industry offers vast scope for jobs in the Aviation, Hospitality and Travel industry
+                                    like Front Office operations, food & beverage, housekeeping, back-office operations, ground staff, automation, and sales
+                                    & marketing and Airline catering & cabin services, Front office Assistants, lobby/guest relation executives, etc.
+                                    
+                                   <br>
+                                   <br>
+                                    Diploma in Aviation Hospitality and Travel Management course helps to impart premium quality education & training in
+                                    line with international standards and preparing young aspirants for careers in aviation, hospitality, travel, tourism,
+                                    BPO's, corporate houses and MNC's. In this course, students gain comprehensive knowledge of customer services and the
+                                    ability to demonstrate resourceful leadership techniques that inspires and empowers individuals to challenge themselves
+                                    and push the limits of excellence to the next dimension of success in aviation and hospitality.
+                                </p>
+
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.EFFECTIVE COMMUNICATION TECHNIQUES</p>
+                                <p>2.ALL ABOUT ENGLISH LANGUAGE</p>
+                                <p>3.INTERNATIONAL GROOMING</p>
+                                <p>4.LIFE SKILLS</p>
+                                <p>5.CUSTOMER SERVICE AND RELATIONSHIP MANAGEMENT</p>
+                                <p>6.INFLIGHT SERVICES</p>
+                                <p>7.AIRPORT GROUND SERVICE OPERATIONS</p>
+                                <p>8.TOURISM AND HOSPITALITY</p>
+                                <p>9.INTERVIEW HANDLING SKILLS</p>
+
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>5 days/week for 2 hours/day
+                                
+                                Saturdays for 4 hours/day</p>
+
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed, appeared or above</p>
+
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17-27 Years</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html" class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dd -->
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading12 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">Advanced Diploma in Aviation Management and Hospitality Training</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent12">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Advanced Diploma in Aviation Management and Hospitality Training improve your communication & soft skills provides
+                                    professional knowledge of three career-oriented industries: aviation, hospitality & tourism in all aspects starting from
+                                    in-flight experience to ground handling, cargo & load management, people & resource management also receive in-depth
+                                    training of guest services, reservation desk management, housekeeping management, F&B services and accounting along with
+                                    the technical skills & presentation skills.
+                                    <br>
+                                    <br>
+                                    This course aims to provide comprehensive, all-inclusive training on aviation subjects and enhancing the participants’
+                                    communication skills, grooming and life skills, along with practical drills and procedures, which are essential to
+                                    become an airline professional. On completing this course, you can work for top airlines, hotels & resorts or travel
+                                    companies not just in India but all over the world.
+                
+                                </p>
+                
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.EFFECTIVE COMMUNICATION TECHNIQUES</p>
+                                <p>2.ALL ABOUT ENGLISH LANGUAGE</p>
+                                <p>3.INTERNATIONAL GROOMING</p>
+                                <p>4.LIFE SKILLS</p>
+                                <p>5.CUSTOMER SERVICE AND RELATIONSHIP MANAGEMENT</p>
+                                <p>6. COMPUTER RESERVATION SYSTEM (AMADEUS)</p>
+                                <p>7.INFLIGHT SERVICES</p>
+                                <p>8.AIRPORT GROUND SERVICE OPERATIONS</p>
+                                <p>9.TOURISM AND HOSPITALITY</p>
+                                <p>10.INTERVIEW HANDLING SKILLS</p>
+                
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>5 days/week for 2 hours/day
+                
+                                    Saturdays for 4 hours/day</p>
+                
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed, appeared or above</p>
+                
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17-27 Years</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading13 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">Advanced Certification in Cabin Crew and Hospitality Training</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent13">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Advanced Certification in Cabin Crew and Hospitality Training is designed for the people who like to become an
+                                    Airhostess performing service which ensure that air travelers are flying in a safe environment, opt for cabin crew as a
+                                    full-fledged career prospect because of the high salaries, exciting experience of flying and visiting new places all
+                                    over the world. This course provides training in communication, teamwork, first aid, personality development and
+                                    customer care of International standards of airlines’, in-flight operations and hospitality industry. The course offers
+                                    in-depth knowledge of developing the customer service attitude and Grooming, general etiquette and image management
+                                    including communication and soft skills to enhance personality, in-flight services, and safety & security procedure of
+                                    aircraft.
+
+                                    <br>
+                                    <br>
+                                    Being one of the best air hostess Institute in India, to equips aspiring students with all the essential knowledge that
+                                    are needed to create a stable & spectacular cabin crew career with great opportunities & handsome packages in leading
+                                    airlines leading to a range of global aviation and hospitality employment opportunities across the globe. The course
+                                    provides an excellent combination of theoretical and practical air hostess training in all flight safety and emergency
+                                    procedures, to handle emergencies on board.
+                                </p>
+                
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.INTRODUCTION TO AVIATION</p>
+                                <p>2.PROFESSIONAL IMAGE</p>
+                                <p>3.A DAY IN THE LIFE OF CABIN CREW</p>
+                                <p>4.INTERVIEW HANDLING SKILLS (VIDEO & IN PERSON)</p>
+                                <p>5.FIRST AID</p>
+                                <p>6.RESPONSIBLE SERVICE OF ALCOHOL</p>
+                                <p>7.AIRCRAFT FAMILARIZATION</p>
+                                <p>8.EMERGENCY EQUIPMENTS</p>
+                                <p>9.NON-NORMAL SITUATIONS (FIRE / DECOMPRESSION / FLIGHT CREW INCAPACITATION)</p>
+                                <p>10.EMERGENCY PROCEDURES</p>
+                                <p>11.INFLIGHT SERVICE</p>
+                                <p>12.HUMAN FACTORS AND FATIGUE</p>
+                                <p>13.POOL AND SLIDE DRILLS</p>
+                                <p>14.AIRLINE TERMS</p>
+                                <p>15.CABIN ANNOUNCEMENTS</p>
+                                <p>16.RECRUITMENT DAY SKILLS</p>
+
+
+
+
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>5 days/week for 2 hours/day
+                
+                                    Saturdays for 4 hours/day</p>
+                
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed, appeared or above</p>
+                
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>18 - 25 Years for Male 
+                                
+                                18 - 22 Years for Female</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading14 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">CERTIFICATION IN AVIATION RETAIL AND HOSPITALITY TRAINING</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent14">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    The Aviation Retail and Hospitality Traning industry is one that is primarily focused on customer satisfaction, which
+                                    usually leads to customer loyalty, which in turn helps to ensure the success of a company all over the world. This
+                                    course includes various sectors of the aviation and hospitality industry which enable the students to handle jobs like
+                                    Ground Operations, Passenger Handling, Cargo Handling, management of hotels, restaurants, travel agencies, cabin crew in
+                                    a well efficient manner. With the increasing need for hospitality services, career opportunities for skilled
+                                    professionals in aviation, retail, and hospitality industries are at an all-time rise.
+                
+                                    <br>
+                                    <br>
+                                    Retail management module which helps the customers to procure the desired merchandise, aware of the new and/or improved
+                                    products are dealt with, which includes advertising and promotion of the products from the retail stores for their
+                                    end-use refers to retail management. This course gives detailed ideas regarding the Retail Management, Retail, Category
+                                    Management, and Retail Marketing techniques, which include all the steps required to bring the customers into the store
+                                    and fulfill their buying need, and ensuring that the customers leave the store with a smile.
+                                    <br>
+                                    <br>
+                                    <p>This course offers the latest training curriculum and techniques so that the candidates are well prepared to meet the
+                                    needs of the ever-changing demands of the industry and train aspiring students in all the aspects related to it and make
+                                    your dream come true</p>
+                                </p>
+                
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.EFFECTIVE COMMUNICATION TECHNIQUES</p>
+                                <p>2.ALL ABOUT ENGLISH LANGUAGE</p>
+                                <p>3.NTERNATIONAL GROOMING</p>
+                                <p>4.PERSONALITY DEVELOPMENT</p>
+                                <p>5.CUSTOMER SERVICE AND RELATIONSHIP MANAGEMENT</p>
+                                <p>6.INTERVIEW HANDLING SKILLS</p>
+                
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>3 Months
+                                
+                                5 days/week for 2 hours/day
+                                
+                                Saturdays for 4 hours/day</p>
+                
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed, appeared or above</p>
+                
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>18 - 25 Years</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5  ">
+                    <div class="flex flex-col p-5">
+                        <div class=" courseheading15 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">CERTIFICATION IN AMADEUS ALTEA TRAINING</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent15">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Amadeus Altea Training course aims to provide intensive hands-on training to the participants on the Amadeus Altea
+                                    platform which is Amadeus’s airline passenger services IT system. This training is most beneficial for students aspiring
+                                    to make a career in Airline Ground Staff for the airline reservation, scheduling and departure control departments.
+                                    <br>
+                                    <br>
+                                    Amadeus Altea system is used globally by 120 Airlines namely Vistara, Qatar Airways, Singapore Airlines, etc. After the
+                                    successful completion of the course and passing of exams, students will get a certificate from Amadeus which is
+                                    recognized by airlines worldwide. It manages the entire check-in process, including retrieving the reservation, making
+                                    any necessary updates, advanced check-in options, boarding passes and baggage tags getting printed out.
+                                    <br>
+                                    <br>
+                                    <p>Amadeus Certification moving towards a platform approach, where airlines will have direct access to self-service
+                                    functionalities; their day-to-day work will be easier to manage, allowing them to integrate technologies and an
+                                    extensive library of web services from Amadeus. Amadeus provides the technology which keeps the aviation sector moving
+                                    smoothly Ensure safe and secure passenger and baggage transport and also provide superior customer service in a
+                                    demanding customer-facing environment. Amadeus Altea course aims to serve travelers better and to manage airline
+                                    business more effectively.</p>
+                
+                                </p>
+                
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.Amadeus Altea Reservation (availability, fares, pricing, booking and ticketing)</p>
+                                <p>2.Amadeus Altes Inventory (schedule management, re-accommodation, seating)</p>
+                                <p>3.Amadeus Altea Departure Control System (check-in, baggage, boarding, weight & balance, flight activity plan)</p>
+                                
+                
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>8 Days
+                                
+                                9 hours/day</p>
+                
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>Graduate</p>
+                
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17-27 Years</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class=" courseheading16 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">BBA IN AVIATION OPERATIONS TRAINING</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent16">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    BBA in Aviation Operations Training is most beneficial for fresher and working professionals who wish to pursue their
+                                    Graduation Degree with a specialization in Aviation. It’s an undergraduate program approved by the Distance Education
+                                    Bureau (DEB) of UGC and UPES University. The 3 years are divided into 6semesters where you can continue your job while
+                                    pursuing the program delivered in distance education mode on Aviation industry specialization followed by an internship
+                                    in the final year. The course is delivered in a blended learning format that includes self-learning; instructor-led live
+                                    sessions and real-life experience through specialized training.
+                                    <br>
+                                    <br>
+                                    The program has been designed for +2 students looking forward to starting a rewarding career across Aviation, and
+                                    Hospitality industries, both in India and Abroad. This program is meant for eligible candidates with a strong background
+                                    of managerial skills in the Aviation management field and leadership; practices may pursue this program along with your
+                                    current job or even as a Fresher.
+                                    <br>
+                                    <br>
+                                    <p>BBA degree in Aviation provides a solid base for the students who aim for the management and operation of aviation
+                                    activities and will equip the students with the skills and knowledge to recognize and deal with problems using their
+                                    managerial skills. The program also ensures that the candidates can perform well in teams, have professionalism &
+                                    knowledge and a strong sense of service to the passengers, ensuring that they receive quality service at the airport and
+                                    in-flight as well. The course of 6 semester combines with training in core administration skills, concepts and practical
+                                    knowledge with an in-depth education in aviation-oriented topics like planning, security, operations, trading, project
+                                    management, consulting, business forecasting, etc.</p>
+                                    <br>
+                                    <br>
+                                    <p>The BBA Aviation program aims to create skilled professionals for aviation to teach the students basic general
+                                    management skills that are required for the manager and executive-level jobs in the aviation sector of the world.</p>
+                
+                                </p>
+                
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.Semester 1 : [Business OrganizationBusiness MathematicsBusiness AccountingBusiness Communication IBusiness ComputingIntroduction to
+                                Aviation Industry]</p>
+                                <p>2.Semester 2 : [Organizational BehaviorBusiness Economics IBusiness Communications IIPrinciples of MarketingFinancial ManagementAirport
+                                Customer Services]</p>
+                                <p>3.Semester 3 : [Cargo HandlingBusiness Economics IIBusiness LawAviation MarketingMarketing CommunicationCustomer Relationship Management]</p>
+                                <p>4.Semester 4 : [International BusinessTravel Agency & Tour OperationResearch Methodology & Report WritingConsumer Behavior & Market
+                                ResearchHuman Resource ManagementTourism Enterprise Management]</p>
+                                <p>5.Semester 5 : [DissertationIATA Travel and Tourism (Foundation Course)**]</p>
+                                <p>6. Semester 6 : [Internship*]</p>
+                                
+                
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>3 Years
+                                
+                                Online Classes</p>
+                
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) with 50% marks</p>
+                
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17 years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading17 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">MBA IN AVIATION OPERATIONS TRAINING</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent17">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    The MBA in Aviation Operations Training program is a unique and well-structured program that offers expertise in
+                                    aviation operations and air transportation also offers opportunities to prepare management for a demanding in the
+                                    aviation industry. It's a 2 years program divided into 4 semesters delivered in distance education mode focus on general
+                                    management and on the Aviation industry specialization followed by industry project in the last semester. The program is
+                                    delivered in a blended learning format that includes self-learning and pursues a job while study.
+                                    <br>
+                                    <br>
+                                    Aeron Academy of aviation and hospitality, the leading institution in Aviation training, has started the rare and
+                                    unique MBA program in Aviation operation management backed by research expertise in the hospitality and aviation
+                                    industries. MBA in Aviation operation is focused on the aviation sector and its many sub-divisions covers the study in
+                                    fundamentals of General Management and additional specialization in International Business, Marketing, and Finance in
+                                    the aviation and hospitality sector.
+                                    <br><br>
+                                    The program emphasizes will be on the application of modern management concepts, methods, and tools on the challenges of
+                                    the aviation and hospitality industry worldwide. Global aviation management covers aspects related to ground handling,
+                                    cargo, aviation safety & fleet management, regulatory management, fueling management & other allied issues relevant to
+                                    the aviation industry.
+                                    <br><br>
+                                    MBA program has a unique advantage; student can work across the aviation industry while pursuing this course and Move to
+                                    managerial positions in the same industry or move up in career. To capitalize on a career opportunity, Aeron has
+                                    designed the perfect curriculum that trains students on all the aspects needed to excel in these lucrative industries
+                                    From aviation training to grooming, Aeron covers all the vital segments in this 4-semester program that gives aspiring
+                                    student career great height around the globe.
+                
+                                </p>
+                
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.Semester 1 : [Economics & Management DecisionsFinancial ManagementMarketing ManagementQuantitative Techniques for Management
+                                ApplicationsOperations & Material Management]</p>
+                                <p>2.Semester 2 : [Human Resource ManagementCustomer Relationship ManagementProject Management & Contract AdministrationStrategic
+                                Management of Technology & InnovationResearch Methodology]</p>
+                                <p>3.Semester 3 : [Fundamentals of Airlines Operation | Airport Planning & Management
+                                
+                                Aviation Forecasting Techniques | Aviation Law & Insurance
+                                
+                                Aviation Safety & Security Management]</p>
+                                <p>4.Semester 4 : [Business Policy & Strategy | Aviation Enterprise Management
+                                
+                                Regulatory Management | Dissertation]</p>
+                                
+                
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>2 Years
+                                
+                                Online Classes</p>
+                
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>Graduate with 50% marks</p>
+                
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>20 Years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- cpl  -->
+        <div>
+            <!-- course name  -->
+            <div class="bg-blacktint-800" id="cpl">
+                <h2 class="text-4xl text-white text-center font-semibold  py-5 mb-3">Commercial Pilot License</h2>
+            </div>
+        
+            <!-- course subjects  -->
+            <div>
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading21 flex justify-between items-center cursor-pointer hover:transform">
+                            <h1 class="text-xl">COMMERCIAL PILOT LICENSE TRAINING – USA</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent21">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Is a person interested in becoming a pilot may want to know, why go for Course in Commercial Pilot License Training in
+                                    the USA? From the biggest hub of aviation, from the first flight to being the largest aviation industry in the world,
+                                    the USA become one of the most preferable and recognized places to be a pilot. The USA, with its wide aviation industry,
+                                    developed expertise in its aviation services that made it the best place to do commercial Pilot license training.
+                                    <br>
+                                    <br>
+                                    The demand in the aviation industry in the USA resulted in developing best training practices, availability of the
+                                    latest technologies, large infrastructure, high-quality trainers is now the best place for flight training in the world
+                                    and aspiring pilots from all over the world choose the USA to do the course. The vast area of the United States offers a
+                                    variety of climates and geographical diversity. The exposure gained by the students while flying in different
+                                    geographical locations along with an opportunity to fly in almost every climate and weather conditions present in the
+                                    world results in highly competent pilots.
+        
+                                    <br>
+                                    <br>
+                                    The Aeron Academy of aviation and hospitality has tied up with flying schools in the USA to offer the best and the
+                                    most competitive flight training to the aspiring pilot candidates and help them to fulfill their dream of flying.
+
+                                </p>
+        
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.Flying School : [CLOUD DANCER AVIATION INC. (CDA) | 955 SINGLETON DR. DELAND, FLORIDA 32724 UNITED STATES]</p>
+                                <p>2.Certification Body : [Federal Aviation Administration (FAA)]</p>
+                                <p>3.Visa Type : [M-1 Visa USA]</p>
+                                <p>4.Enrollment Proccedure : [Medical Examination,Enrolment form with seat booking fee payment,Education certificate verification,Receive Form I-20 from
+                                CDAApply for Visa,Apply for DGCA Computer Number,Complete CPL from CDA]</p>
+
+                                <p class="font-semibold py-2">Topics</p>
+
+                                <table class="table-auto border-4 w-full text-center">
+                                    <thead>
+                                        <tr class="font-medium">
+                                            <th>CPL BREAKDOWN</th>
+                                            <th>AIRCRAFT</th>
+                                            <th>HOURS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="boder-4">
+                                        
+                                        <tr>
+                                            <td>Private</td>
+                                            <td>Cessna 172</td>
+                                            <td>40 Hrs (30 Hrs Dual 10 Hrs Solo)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FAA Flight Exam</td>
+                                            <td>Cessna 172</td>
+                                            <td>1.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Instrument</td>
+                                            <td>Cessna 172</td>
+                                            <td>40 Hrs (29 Actual 11 Hrs Simulator)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FAA Flight Exam</td>
+                                            <td>Cessna 172</td>
+                                            <td>1.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time Building</td>
+                                            <td>Cessna 172</td>
+                                            <td>158 Hrs PIC</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Commercial Multi</td>
+                                            <td>PA34-200</td>
+                                            <td>18.5 Hrs Dual</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FAA Flight Exam</td>
+                                            <td>PA34-200</td>
+                                            <td>1.5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+        
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>6 - 8 Months</p>
+        
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed with Physics and Mathematics
+                                
+                                Basic English Communication</p>
+        
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17 years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- dd -->
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading22 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">COMMERCIAL PILOT LICENSE TRAINING – SOUTH AFRICA</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent22">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Aeron Academy of Aviation and hospitality offer the course with Bird Aviation who is a specialist flight training
+                                    institute located at Vereeniging airport Gauteng, South Africa. If you wish to fly and pursue a career in the aviation
+                                    industry our institutes ensure every student reach their full potential while realizing a lifelong dream of unlimited
+                                    opportunities around the globe.
+                                    <br>
+                                    <br>
+                                    South Africa offers a broad spectrum of Pilot Training and well known for its growing aviation industry. Bird aviation
+                                    primarily focused on Professional Pilot Training and also focuses on the improvement of Knowledge, Skill and Safety
+                                    standards in the recreational/commercial flying sector. The Vereeniging airport in South Africa boasts multiple runways,
+                                    fuel and night flying facilities. Additionally, the addition of an Aerobatic Box at the field enables us to do aerobatic
+                                    training at the airport and provide opportunities in this field of aviation.
+        
+                                </p>
+        
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.Pre-Requisites for the course : [Age: 17 years and above10+2 (Class 12th) passed with Physics and MathematicsBasic English Communication,Medically
+                                FitHeight: 155 cms and aboveMedical Examination,Fill Enrolment form with seat booking fee payment,Education certificate
+                                verification,Receive Admission Confirmation Letter from Bird Aviation,Apply for Visa,Apply for DGCA Computer Number, Complete Cpl from Bird Aviation]</p>
+                                <p>2.Certification Body : [South African Civil Aviation Authority (SACAA)] </p>
+                                <p>3.Visa Type : [Student Visa - South Africa]</p><br><br>
+
+                                <table class="table-auto w-full text-center">
+                                    <thead>
+                                        <tr class="">
+                                            <th>CPL BREAKDOWN</th>
+                                            <th>SINGLE ENGINE DUAL</th>
+                                            <th>SOLO</th>
+                                            <th>MULTI ENGINE DUAL</th>
+                                            <th>SIMULATOR</th>
+                                            <th>BRIEFING</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <td>PPL Hours</td>
+                                            <td>33</td>
+                                            <td>15</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Night Rating</td>
+                                            <td>12</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hour Building</td>
+                                            <td>5</td>
+                                            <td>100</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Multi &amp; Instrument Rating</td>
+                                            <td>15</td>
+                                            <td>-</td>
+                                            <td>25</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>65</td>
+                                            <td>115</td>
+                                            <td>25</td>
+                                            <td>20</td>
+                                            <td>35</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+
+        
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>11 - 12 Months</p>
+        
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed with Physics and Mathematics
+                                
+                                Basic English Communication</p>
+        
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17 years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+        </div>
+
+        <!-- hotel  -->
+        <div>
+            <!-- course name  -->
+            <div class="bg-blacktint-800" id="hm">
+                <h2 class="text-white text-center text-4xl  font-semibold mb-3 py-5">Hotel Managment</h2>
+            </div>
+        
+            <!-- course subjects  -->
+            <div>
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5  ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading31 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">CERTIFICATE IN HOTEL AND TOURISM MANAGEMENT TRAINING - BIHR</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent31">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                The Kingdom of Bahrain is a modern, Arabic, island in the Persian Gulf and a major international center for service
+                                industries in hospitality and tourism. Bahrain always has a future approach to economic and world affairs and is a truly
+                                international hub for students who wish to pursue tourism and hospitality and make a career in this rapidly growing
+                                industry, Certificate in Hotel and Tourism Management – BIHR Certification opens doors for better job opportunities in
+                                the future not only in India but all over the world.
+                                    <br>
+                                    <br>
+                                The BIHR campus trained individuals to deliver benchmark standards of managerial competence in hospitality management
+                                and has all the facilities every student expect in international hospitality school, including training kitchens and
+                                restaurants, a front office and housekeeping laboratory, a resource center and state of the art information technology
+                                including campus-wide wireless facilities provides real job training experience .
+                                BIHR was the first private training and education institute in tourism and hospitality in the Gulf to obtain the
+                                prestigious ISO 9000 (2001) quality assurance certification.
+                                </p>
+        
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.Advantages of Course :</p>
+                                <ul class="list-inside">
+                                    <li>3 Months Academics and Practical Training in Customer Service, F & B, Front Desk & Kitchen.</li>
+                                    <li>9 Months PAID INTERNSHIP in 5* & 4* Hotels in the Kingdom of Bahrain.</li>
+                                    <li>100% Placement Assistance by BIHR after successful completion of course and 9 months PAID INTERNSHIP.</li>
+                                </ul>
+                                <p>2.Classrooms </p>
+                                <p>3. Housekeeping Lab</p>
+                                <p>3.IT Lab</p>
+                                <p>4.Kitchen Training</p>
+                                <p>5. Cafeteria Training</p>
+                                <p>5. restaurant Training</p>
+        
+                                
+        
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>12 Months
+                                
+                                At BIHR</p>
+        
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>SSC Certificate and Mark Sheets
+                                
+                                School Leaving Certificate</p>
+        
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>18 years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- dd -->
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5 ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading32 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">CERTIFICATE IN HOTEL AND TOURISM MANAGEMENT TRAINING - Domestic Program</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent32">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Certificate in Hotel and Tourism Management Training course aims to provide comprehensive, all-inclusive training on
+                                    hospitality subjects and enhancing the participants’ communication skills, grooming and life skills, along with
+                                    practical knowledge and procedures, which are essential to make a career in hotel management. It prepares you to handle
+                                    worldwide customers to the International standards of the hospitality industry all over the world.
+                                    <br>
+                                    <br>
+                                    This one-year Diploma course is designed to equip its students with the necessary skills to compete in the areas of
+                                    service industry operations and to transform your life with a successful career. This course is meant for the people who
+                                    wants to be successful within service industry that includes lodging, event-planning, theme-parks, transportation,
+                                    cruise-line, additional fields within the tourism industry and To skill, train & empower students in the Food & Beverage
+                                    Service Dept. servers, housekeepers, porters, kitchen workers, bartenders, management, marketing, and human resources
+                                    etc, (Hospitality Industry) to meet industry requirements of International Standards.
+        
+                                </p>
+        
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.English in Hotel Industry</p>
+                                <p>2.Food and Beverage Service</p>
+                                <p>3.Front Office Associate</p>
+                                <p>4.Counter Sale Executive</p>
+                                <br><br>
+                
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>12 Months
+                                
+                                5 days/week for 2 hours/day</p>
+        
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>SSC Certificate and Mark Sheets</p>
+        
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>18 years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+        </div>
+
+        <!-- aircreaft maintain  -->
+        <div>
+            <!-- course name  -->
+            <div class="bg-blacktint-800" id="ae">
+                <h2 class="text-white text-center text-4xl font-semibold  py-5 mb-3">Aircraft Maintenance Engineering</h2>
+            </div>
+        
+            <!-- course subjects  -->
+            <div>
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5  ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading41 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">GCAA A1 / A2 & EASA B1 / B2</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent41">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    The Middle East is the fastest-growing region when it comes to the number of passengers traveling and airline capacity
+                                    double its size in the last decade. There is a constant requirement for qualified professionals in various airports of
+                                    the Middle East and all over the world. Our aviation training institute VCATI offers Guaranteed Job for all the students
+                                    of the Aircraft Maintenance Engineering course.
+                                    <br>
+                                    <br>
+                                    Vision Concept Aviation Training Institute (VCATI) is a General Civil Aviation Authority is approved training
+                                    organization, where our course training is delivered by our dedicated and highly experienced team of instructors, desire
+                                    to share our passion for the aviation industry and all of our courses are examined and designed to achieve success for
+                                    every student and get a Guaranteed Job in the fast-growing aviation industry.
+
+                                </p>
+        
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.Highlights :</p>
+                                <ul class="list-inside">
+                                    <li>1st Year would be learning in class with practical training & 2nd year would be On Job Training (OJT)</li>
+                                    <li>Guaranteed OJT with our partners Etihad Engineering, Kuwait Airways, Air Arabia, Emirates Aviation Services, Jet
+                                    Aviation, Global Jet & other leading companies in the Aviation Industry</li>
+                                    <li>Job Guarantee as an Aircraft Maintenance Engineer, on passing all the module examinations in first attempt</li>
+                                    <li>EASA AME license is valid in 146+ countries across the globe.</li>
+                                </ul>
+                                <p>2.Training School : [VISION CONCEPT AVIATION TRAINING INSTITUTE – VCATI AL GARHOUD, P.O. BOX: 79780, DUBAI] </p>
+                                <p>3. Certification Body : [General Civil Aviation Authority (GCAA)]</p> <br><br>
+
+                                <table class="table-auto text-center">
+                                    <tbody>
+                                        <tr class="font-smibold">
+                                            <th class="w-6/12">Subjects</th>
+                                            <th>A</th>
+                                            <th></th>
+                                            <th>B1</th>
+                                            <th>B2</th>
+                                        </tr>
+                                        <tr class="font-semibold">
+                                            <th class="w-6/12"></th>
+                                            <th>A1</th>
+                                            <th>A2</th>
+                                            <th>B1.1</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>Mathematics</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Physics</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Electrical Fundamentals</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Electronic Fundamentals</td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Digital Techniques</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Materials &amp; Hardware</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maintenance Practices</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Basic Aerodynamics</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human Factors</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aviation Legistation</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aeroplanes Aerodynamics, Stuctures &amp; Systems</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aeroplanes Aerodynamics, Stuctures &amp; Systems</td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Helicopter Aerodynamics, Stuctures &amp; Systems</td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aircraft Aerodynamics, Stuctures &amp; Systems</td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Propulsion</td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gas Turbine Engine</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Piston Engine</td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Propeller</td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-check"></i></td>
+                                            <td><i class="bi bi-remove"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+        
+        
+        
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>11 - 12 Months</p>
+        
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed with Physics and Mathematics
+                                
+                                Basic English Communication
+                                </p>
+        
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17 years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+        </div>
+
+        <!-- event  -->
+        <div class="">
+            <!-- course name  -->
+            <div class="bg-blacktint-800" id="em">
+                <h2 class="text-white text-center text-4xl font-semibold py-5 mb-3 ">Event Managment</h2>
+            </div>
+        
+            <!-- course subjects  -->
+            <div>
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-5  ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading51 flex justify-between items-center cursor-pointer transform hover:underline">
+                            <h1 class="text-xl">EVENT REQUISITE - ADVANCED DIPLOMA IN EVENT MANAGEMENT</h1>
+                            <p class=" text-xl "><i class="bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent51">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Advance Diploma in Event Management course open opportunities in employment areas are among Event manager, Event
+                                    Accounts Manager, Event Coordinator, Customer Care Executive, Business Development Executive, Marketing Campaign
+                                    Manager, etc. Thecompensationsand salaries for individual jobs depending on the level of expertise and level of
+                                    operation.
+                                    <br>
+                                    <br>
+                                    Event planning is the process of managing an event, includes budgeting, selecting and reserving the event location,
+                                    acquiring permits, planning food, decoration, coordinating transportation for guests, developing a theme, arranging for
+                                    activities, managing risk, and developing contingency plans determining the objective that the event management company
+                                    wants to achieve. Organizing and designing an event, whether it‘s a corporate event, social function, tradeshow or any
+                                    other event, is in many ways comparable to directing a live stage performance needs the art of multitasking and be
+                                    proactive as tons of people are relying on you on an important day which is stressful but if you love your job you will
+                                    a high level of autonomy and independence.
+        
+                                </p>
+        
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.Effective Communication Techniques :</p>
+                                <p>2.Event Marketing and Public Relations :</p>
+                                <p>3.Event Planning :</p>
+                                <p>4.EVENT PRODUCTION :</p>
+                                <p>5.EVENT SERVICES & VENDOR MANAGEMENT :</p>
+                                 <br><br>
+        
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>11 - 12 Months</p>
+        
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed with Physics and Mathematics
+                                
+                                Basic English Communication
+        
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17 years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-purple-200 shadow-xl  rounded mx-auto mb-12  ">
+                    <div class="flex flex-col p-5">
+                        <div class="courseheading52 flex justify-between items-center cursor-pointer hover:underline">
+                            <h1 class="text-xl">EVENT PARAMOUNT - ADVANCED CERTIFICATION IN EVENT MANAGEMENT
+</h1>
+                            <p class=" text-xl "><i class=" bi bi-arrow-down-circle"></i></p>
+                        </div>
+                        <div class="courseinnercontent52">
+                            <div>
+                                <p class="font-semibold py-2">Description: </p>
+                                <p class="">
+                                    Event Paramount course aims to provide a fast-track intensive training required to develop the necessary skills to
+                                    become a competent event manager for various domains in the event industry. There is plenty of dedicated event
+                                    management courses that cover the spectrum from the foundation to Diploma, to Postgraduate levels. Aeron Academy of
+                                    aviation and hospitality offers courses training courses which include event industry experience to support the start of
+                                    your career as an event planner all over the world.
+                                    <br>
+                                    <br>
+                                    Event management is the process that represents the total package of interventions that needs to be done in an
+                                    integrated manner that should involve all the key role players, such as clients, organizers, venues, sub-contractors,
+                                    suppliers and aims to ensure that an event is hosted responsibly. Events management requires a lot of hard work from
+                                    planning, organization, and implementation to stringent budgeting and negotiating designing and producing. Events
+                                    management industry means work is always a celebration and great fun, bringing the possibility of working in incredible
+                                    locations with different people all the time, travel and explores different cities and countries. Any large event
+                                    involves catering, digital and technological setup and venue set up that would possible with the help of time
+                                    management, scheduling, and coordination of staff activity.
+                
+                                </p>
+                
+                                <p class="font-semibold py-2">Topics</p>
+                                <p>1.INTRODUCTION TO EVENT MANAGEMENT:</p>
+                                <p>2.FUNDAMENTALS OF EVENT MANAGEMENT :</p>
+                                <p>3.CORPORATE EVENT MANAGEMENT:</p>
+                                <br><br>
+                
+                                <p class="font-semibold py-2">Duration</p>
+                                <p>11 - 12 Months</p>
+                
+                                <p class="font-semibold py-2">Education Qualification</p>
+                                <p>10+2 (Class 12th or equivalent) passed with Physics and Mathematics
+                                
+                                Basic English Communication
+                
+                                <p class="font-semibold py-2">Age Qualification</p>
+                                <p>17 years and above</p>
+                            </div>
+                            <div>
+                                <a href="./contactUs.html"
+                                    class=" hover:bg-purpltint-700 hover:underline inline-block px-5 py-3 mt-5 text-xl rounded font-semibold bg-purpltint-900 text-white">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+        </div>
+    </section>
+
+    <footer class="font-pops ">
+    
+        <div class="flex justify-between items-center bg-gray-100 px-10 py-10
+                        pN:flex-wrap pN:justify-center bg-purpltint-1100 text-white lg:py-20
+                        pN:text-lg">
+    
+            <div class="lg:w-full pN:border-b-2 pN:border-blacktint-200">
+                <img class="w-4/12 mb-3 pN:mx-auto" src="./resources/aa/aeron-text-logo-white.png" alt="">
+                <p class="lg:pr-40 pN:mx-auto pN:mb-8 pN:text-center">Best AASSC & NSDC certified training institute for
+                    aviation and hospitality in Chhattisgarh </p>
+            </div>
+    
+            <div class=" my-auto border-l-2 border-blacktint-200 flex w-full flex-col items-center
+                            pN:border-l-0  ">
+                <br>
+                <p class="font-semibold underline mb-3 pN:mx-auto text-lg">Dowload Brochure</p>
+                <a class="pN:mb-3 pN:mx-auto px-20 py-4 rounded bg-purple-100 text-black font-semibold
+                            hover:bg-purple-50 shadow-xl hover:shadow-2xl" id="footerdownload22">Download</a>
+                <br>
+    
+    
+            </div>
+    
+            <div class=" border-l-2 border-blacktint-200 flex flex-col w-full
+                            pN:border-l-0 pN:border-t-2 pN:text-center">
+                <div class="px-10">
+                    <p class="mb-3 underline font-semibold pN:mt-8 text-lg">Get in Touch</p>
+                    <p class="mb-1"> <span><i class="bi bi-telephone-fill"></i> <br class="lg:hideen md:hidden"> </span>
+                        : 1800-572-3791</p>
+                    <p class="mb-1"> <span><i class="bi bi-envelope-fill"></i> <br class="lg:hideen md:hidden"></span> :
+                        contact@aeronacademy.com</p>
+                    <p class="mb-1"> <span><i class="bi bi-house-fill"></i><br class="lg:hideen md:hidden"></span> :
+                        C-54, Second Floor, near Shree Narayana Hospital,
+                        Sector 5, Devendra Nagar.Raipur, Chhattisgarh 492001</p>
+                </div>
+            </div>
+    
+    
         </div>
     
-        <div class="flex flex-col lg:w-3/12 pN:items-center">
-            <a href="tel:1800-572-3791" class="mb-3 pN:mt-3 pN:text-center">Phone:<strong> 1800-572-3791</strong></a>
-            <p class=" pN:text-center">C-54, Second Floor, near Shree Narayana Hospital, Sector 5, Devendra Nagar.Raipur,
-                Chhattisgarh 492001</p>
+        <div class=" px-10 py-5 bg-gray-200 font-noto font-light flex justify-between 
+                        pN:flex-wrap ">
+            <p class="pN:mx-auto">©2021 Aeron Academy.All Rights Reserved</p>
+            <p class="pN:mx-auto"> Made By therohitmishra.com</p>
         </div>
-    
     </footer>
 
-    
+    <script src="./forcontrolcourse.js"></script>
+    <script src="./accordian.js"></script>
+
 </body>
-</html>  
+ 
+ 
+ 
+ </html>
