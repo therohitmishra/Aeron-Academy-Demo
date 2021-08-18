@@ -1568,6 +1568,10 @@ video {
     width: 25%;
   }
 
+  .pN\:w-9\/12 {
+    width: 75%;
+  }
+
   .pN\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1734,10 +1738,6 @@ video {
 
   .lg\:ml-auto {
     margin-left: auto;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:h-80 {
