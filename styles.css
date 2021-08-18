@@ -1736,6 +1736,10 @@ video {
     margin-left: auto;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:h-80 {
     height: 20rem;
   }
