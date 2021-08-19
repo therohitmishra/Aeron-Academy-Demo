@@ -1572,6 +1572,10 @@ video {
     width: 91.666667%;
   }
 
+  .pN\:w-full {
+    width: 100%;
+  }
+
   .pN\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
