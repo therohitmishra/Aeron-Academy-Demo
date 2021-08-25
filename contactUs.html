@@ -48,6 +48,8 @@
             src="https://www.facebook.com/tr?id=561200308626883&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 
+    
+
 </head>
 <body class="font-pops">
 
@@ -183,7 +185,7 @@
 
                     <!-- submit btn -->
                     <div class="flex flex-col px-10"> 
-                        <button type="submit" class="p-5 bg-purple-500 text-white font-semibold rounded-lg">Submit Now</button>
+                        <button type="submit" class="p-5 bg-purple-500 text-white font-semibold rounded-lg" id="submitButton">Submit Now</button>
 
                     </div>
                 </form>
@@ -203,7 +205,18 @@
         <a class="font-semibold text-gray-600">Aeron Academy - 2021</a>
     </footer>
 
+    <script type="text/javascript">
+        document.getElementById('submitButton').addEventListener('click', function () 
+        {
+            
+                fbq('track', 'CompleteRegistration', { value: 1, currency: 'INR', } );
+    
+        }, false);
+    </script>
+
     <script src="./formcontrol2.js"></script>
+
+    
 
 
 
