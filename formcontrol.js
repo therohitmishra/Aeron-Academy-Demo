@@ -2,21 +2,16 @@
 //download form modal toggle
 let modal = document.getElementById("modal")
 let closebtn = document.getElementById("btn-close")
-let openbtn = document.getElementsByClassName("btn-open")
+let openbtn = document.getElementById("btn-open")
 let fbtn = document.getElementById("footerdownload")
 
-openbtn[0].onclick = function () {
+openbtn.onclick = function () {
     modal.style.display = "block"
 }
 
 closebtn.onclick = function () {
     modal.style.display ="none"
 }
-
-openbtn[1].onclick = function () {
-        modal.style.display = "block"
-}
-
 fbtn.onclick = function () {
         modal.style.display = "block"
 }
@@ -53,7 +48,7 @@ function aftersubmit2 ()
     var formclear2 = document.getElementById("downloadbrouchure2")
     formclear2.reset();
     var btnreset = document.getElementById("rinformation")
-    btnreset.innerHTML = "submit success"
+    btnreset.innerHTML = '<i class="bi bi-check-circle text-white font-semibold text-2xl "></i>'
 
 }
 
@@ -75,3 +70,38 @@ formtwo.addEventListener('submit', e => {
             .then(response => aftersubmit2())
             .catch(error => console.error('Error!', error.message))
 })
+
+//////////////hero section//////////////
+
+document.getElementById("headtimestamp").value = time;
+function aftersubmit3 () {
+    
+    document.getElementById("exitmodal-onoff").style.display = "block" ;
+    document.getElementById("headformname").reset();
+}
+
+const heroform = document.forms['headformname']
+heroform.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(heroform) })
+            .then(response => aftersubmit3())
+            .catch(error => console.error('Error!', error.message))
+})
+
+
+function headbtnload() {
+    
+    document.getElementById("btnexthero").style.display = "none";
+    document.getElementById("btnspinner").style.display = "block";
+}
+
+///////////////////btn spinner cta//////////////////////
+function headbtnload2() {
+    
+    document.getElementById("ctatext").style.display = "none";
+    document.getElementById("ctatext2").style.display = "none";
+
+    document.getElementById("btnspinner2").style.display = "block";
+}
+
+/////////////

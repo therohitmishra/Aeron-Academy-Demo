@@ -23,19 +23,6 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-
-        <!-- Hotjar Tracking Code for https://www.aeronacademy.com -->
-        <script>
-            (function (h, o, t, j, a, r) {
-                h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-                h._hjSettings = { hjid: 2566268, hjsv: 6 };
-                a = o.getElementsByTagName('head')[0];
-                r = o.createElement('script'); r.async = 1;
-                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-        </script>
-        
         <style>
             .swiper-slide {
             width: auto;
@@ -52,28 +39,6 @@
 
             gtag('config', 'UA-203286514-1');
         </script>
-
-        <!-- Facebook Pixel Code -->
-        <script>
-            !function (f, b, e, v, n, t, s) {
-                if (f.fbq) return; n = f.fbq = function () {
-                    n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-                n.queue = []; t = b.createElement(e); t.async = !0;
-                t.src = v; s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window, document, 'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '561200308626883');
-            fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-                src="https://www.facebook.com/tr?id=561200308626883&ev=PageView&noscript=1" /></noscript>
-        <!-- End Facebook Pixel Code -->
-
-        
     
 </head>
 
@@ -118,56 +83,54 @@
         </div>
     </header>
 
-    <!-- Hero section(banner) -->
-    <section>
-
-        <!-- [wrapper div]  -->
-        <div class=" bg-gray-50 mx-auto flex flex-col items-center px-20 py-10  
-        lg:flex-row lg:py-15">
-
-            <!-- hero section texts and buttons  -->
-            <div class="flex flex-col items-center text-center mb-10 lg:flex-1 lg:text-left ">
-                <h1 class="font-robo text-bluegray-900 font-semibold text-5xl mb-10 
-                            lg:font-bold">
-                    Training and Placement in Aviation and Hospitality,Hotel and Event
-                    Industries
-            </h1>
-
-                <p class="font-pops text-xl mb-10 lg:pr-24  ">
-                    At aeron academy we train you with specialized in
-                    demand modern skills. Over 88% of all graduates
-                    are employed within 6 months of graduation.
-                </p>
 
 
+    <!-- header design 2  -->
+    <section class="font-pops">
+        <div class="">
+            <div class="grid grid-cols-2 pN:grid-cols-1 items-center lg:bg-cover"
+                style="background-image: url( ./resources/aa/backgroundpattern.svg )">
+    
+                <!-- image div  -->
+                <div class=" justify-items-center pN:order-2  ">
+                    <img src="./resources/aa/coverimageone.png" alt="" class="lg:w-8/12 mx-auto lg:mt-12">
+                </div>
+    
+                <!-- form div  -->
+                <div class=" lg:px-32 px-10 pN:order-1 pN:pt-24 ">
+                    <!-- form div  -->
+                    <div class="bg-white rounded-xl shadow-xl p-5   ">
+                        <p class="text-center text-3xl font-semibold mb-5 ">Attend a Free live class session</p>
+                        <p class="text-center py-1"> Enter your details</p>
 
-                <!-- div having buttons inside hero text div  -->
-                <div class="w-full flex flex-col items-center font-pops text-xl gap-5 lg:flex-row  ">
-                    <a href="./contactUs.html">
-                        <button class=" text-white bg-purpltint-900 rounded py-2 px-5 lg:py-5 lg:px-6 shadow-md
-                                        hover:bg-purpltint-800 hover:shadow-md font-semibold
-                                        hover:rounded-xl">
-                            Apply for Admission
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button class=" shadow-md rounded px-5 py-2 lg:py-5 lg:px-6
-                                        hover:bg-gray-100 hover:shadow-md
-                                        hover:rounded-xl hover:font-normal btn-open ">
-                            Download Brochure
-                        </button>
-                    </a>
-
+                        <svg id="" class="  animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+                            <!-- ... -->
+                        </svg>
+                        <form name="headformname" class="flex flex-col  px-5 border-t-2 pt-5" id="headformname">
+                            <input type="text" name="Name" class="border-2 mb-5 py-2 rounded-lg px-2"
+                                placeholder="Enter Your Full Name" required>
+                            <input type="text" name="Phone" class="border-2 mb-5 py-2 rounded-lg px-2"
+                                placeholder="Enter Your Phone Number" pattern="[789][0-9]{9}" required>
+                            <input type="text" name="Time" id="headtimestamp" class="hidden">
+                            <button type="submit" class=" text-lg rounded mb-5 py-3
+                                        font-semibold text-white rounded
+                                        bg-gradient-to-r from-yellow-600 to-pink-600" id="headsubmit" 
+                                        onclick="headbtnload()">
+                                        <div class="mx-auto" id="btnspinner">
+                                            <div class="animate-spin mx-auto rounded-full h-8 w-8 border-b-8 border-white"></div>
+                                        </div>
+                                        <span id="btnexthero"> Join Online Demo Class</span> 
+                                    
+                            </button>
+                        </form>
+                    </div>
+    
                 </div>
             </div>
-
-            <!-- heros section image  -->
-            <div class="lg:flex-1">
-                <img class="" src="./resources/aa/9aug-hero1.png" alt="">
-            </div>
-
+    
+    
         </div>
-
+    
     </section>
 
 
@@ -175,7 +138,20 @@
 
     <main class="">
 
-
+        <!-- exit modal  -->
+        <section class="font-pops" id="exitmodal-onoff">
+        
+            <div class="bg-gray-200 lg:w-4/12 text-center p-5 rounded-lg mx-auto my-auto" id="exitmodal-content">
+                <p class="text-3xl font-semibold">Thank you</p>
+                <p class="text-3xl font-semibold mb-10 ">We will be calling you soon</p>
+                <img src="./resources/aa/checked.png" alt="" class="w-2/12 mx-auto mb-10">
+                <a href="./index.html" class="bg-green-500 px-5 py-2 rounded-lg text-white font-semibold text-lg">CLOSE</a>
+        
+            </div>
+            <div class="" id="exitmodal-bg">
+        
+            </div>
+        </section>
 
         <!-- modal 1 form  -->
         <section class=" hidden font-pops bg-black bg-opacity-90 modalstyle " id="modal">
@@ -188,7 +164,7 @@
                     </div>
                     <div class="px-10">
                         <p class="text-center font-semibold text-2xl">Here is your student help book
-                            containing admission details and course
+                            containing admisiion details and course
                             information</p>
                     </div>
                     <div>
@@ -210,7 +186,7 @@
                             </div>
 
                             <button type="submit"
-                                class="mx-auto bg-purpltint-900 text-white font-semibold px-8 py-3 rounded" id="downloadnowbtn">Get my
+                                class="mx-auto bg-purpltint-900 text-white font-semibold px-8 py-3 rounded">Get my
                                 book</button>
                         </form>
                     </div>
@@ -225,98 +201,108 @@
 
         <!-- course revised  -->
         <section class="font-pops bg-white lg:px-32 ">
-
-            <div class="py-20 mb-20 pN:bg-blacktint-800 ">
-                <p class="text-2xl font-semibold underline text-center text-purpltint-900 pN:text-purpltint-200 ">Make your career choice</p>
+        
+            <div class="py-20  pN:bg-blacktint-800 ">
+                <p class="text-2xl font-semibold underline text-center text-purpltint-900 pN:text-purpltint-200 ">Make your
+                    career choice</p>
                 <p class="text-4xl font-semibold text-center pN:text-white">From these courses </p>
             </div>
-
-            <div class="flex pN:flex-col flex-wrap justify-center">
+        
+            <div class="flex pN:flex-col flex-wrap justify-center gap-10 pN:px-5">
                 <!-- aviatin card  -->
-                <div class="lg:w-4/12 items-center text-center">
-                    <div class="flex flex-col items-center   ">
-                        <div class= "">
-                            <img src="./resources/aa/plane.png" alt="" class="w-2/12 mx-auto ">
-                        </div>
-                
-                        <div class=" p-5">
-                            <h2 class="text-3xl font-semibold mb-3 ">Aviation & Hospitality</h2>
-                            <p class="font-robo text-medium mb-3 ">Get high quality training and placement opportunities
-                                for various departments in Aviation and Hospitality Industry</p>
-                            <a href="./courses.html#ah" class="hover:text-purpltint-900 hover:underline font-medium">Learn more ></a>
-                
+                <a href="./courses.html#ah">
+                    <div class="lg:w-3/12 items-center text-center shadow-xl bg-purple-50 hover:bg-purple-100 transform hover:scale-105 rounded-lg py-10">
+                        <div class="flex flex-col items-center   ">
+                            <div class="">
+                                <img src="./resources/aa/plane.png" alt="" class="w-2/12 mx-auto ">
+                            </div>
+                            <div class=" p-5">
+                                <h2 class="text-3xl font-semibold mb-3 ">Aviation & Hospitality</h2>
+                                <p class="font-robo text-medium mb-3 ">Get high-quality training and placement opportunities
+                                    for various departments in Aviation and Hospitality Industry</p>
+                                <a href="./courses.html#ah" class="hover:text-purpltint-900 hover:underline font-medium">Learn more
+                                    ></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                </a>
+        
                 <!-- hotel card  -->
-                <div class="lg:w-4/12 items-center text-center">
-                    <div class="flex flex-col items-center">
-                        <div class="">
-                            <img src="./resources/aa/hotel.png" alt="" class="w-2/12 mx-auto ">
-                        </div>
-                
-                        <div class=" p-5 ">
-                            <h2 class="text-3xl font-semibold mb-3">Hotel Management</h2>
-                            <p class="font-robo text-medium mb-3 ">Engage with Hospitality Experts and Learn the Skills
-                                Necessary To accelerate your career in the Hospitality sector</p>
-                            <a href="./courses.html#hm" class="hover:text-purpltint-900 hover:underline font-medium">Learn more ></a>
+                <a href="./courses.html#hm">
+                    <div class="lg:w-3/12 py-10 items-center text-center shadow-xl bg-purple-50 rounded-lg hover:bg-purple-100 transform hover:scale-105">
+                        <div class="flex flex-col items-center">
+                            <div class="">
+                                <img src="./resources/aa/hotel.png" alt="" class="w-2/12 mx-auto ">
+                            </div>
+                            <div class=" p-5 ">
+                                <h2 class="text-3xl font-semibold mb-3">Hotel Management</h2>
+                                <p class="font-robo text-medium mb-3 ">Engage with Hospitality Experts and Learn the Skills
+                                    Necessary To accelerate your career in the Hospitality sector</p>
+                                <a href="./courses.html#hm" class="hover:text-purpltint-900 hover:underline font-medium">Learn more
+                                    ></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                </a>
+        
                 <!-- pilot card  -->
-                <div class="lg:w-4/12 items-center text-center mb-20 pN:mb-0">
-                    <div class="flex flex-col items-center  ">
-                        <div class="">
-                            <img src="./resources/aa/captain.png" alt="" class="w-2/12 mx-auto ">
-                        </div>
-                
-                        <div class="p-5">
-                            <h2 class="text-3xl font-semibold mb-3">Pilot License</h2>
-                            <p class="font-robo text-medium mb-3">One stop solution provider for Commercial
-                                Pilot License with Multi-Engine Rating and DGCA Conversion requirements</p>
-                            <a href="./courses.html#cpl" class="hover:text-purpltint-900 hover:underline font-medium">Learn more ></a>
+                <a href="./courses.html#cpl">
+                    <div class="lg:w-3/12 py-10 items-center text-center shadow-xl bg-purple-50 rounded-lg hover:bg-purple-100 transform hover:scale-105">
+                        <div class="flex flex-col items-center  ">
+                            <div class="">
+                                <img src="./resources/aa/captain.png" alt="" class="w-3/12 mx-auto ">
+                            </div>
+                            <div class="p-5">
+                                <h2 class="text-3xl font-semibold mb-3">Pilot License</h2>
+                                <p class="font-robo text-medium mb-3">one-stop solution provider for Commercial
+                                    Pilot License with Multi-Engine Rating and DGCA Conversion requirements</p>
+                                <a href="./courses.html#cpl" class="hover:text-purpltint-900 hover:underline font-medium">Learn more
+                                    ></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                </a>
+        
                 <!-- event card  -->
-                <div class="lg:w-4/12 items-center text-center">
-                    <div class="flex flex-col items-center ">
-                        <div class="">
-                            <img src="./resources/aa/spotlight.png" alt="" class="w-2/12 mx-auto">
-                        </div>
-                
-                        <div class="p-5">
-                            <h2 class="text-3xl font-semibold mb-3">Event Management</h2>
-                            <p class="font-robo text-medium mb-3">Award winning Team of event management professionals
-                                who are carrying out leading research and have great links
-                                with industry</p>
-                            <a href="./courses.html#em" class="hover:text-purpltint-900 hover:underline font-medium">Learn more ></a>
+                <a href="./courses.html#em">
+                    <div class="lg:w-3/12 py-10 items-center text-center shadow-xl bg-purple-50 rounded-lg hover:bg-purple-100 transform hover:scale-105">
+                        <div class="flex flex-col items-center ">
+                            <div class="">
+                                <img src="./resources/aa/spotlight.png" alt="" class="w-2/12 mx-auto">
+                            </div>
+                            <div class="p-5">
+                                <h2 class="text-3xl font-semibold mb-3">Event Management</h2>
+                                <p class="font-robo text-medium mb-3">Award-winning Team of event management professionals
+                                    who are carrying out leading research and have great links
+                                    with industry</p>
+                                <a href="./courses.html#em" class="hover:text-purpltint-900 hover:underline font-medium">Learn more
+                                    ></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                </a>
+        
                 <!-- maintainance card  -->
-                <div class="lg:w-4/12 items-center text-center">
-                    <div class="flex flex-col items-center">
-                        <div class="">
-                            <img src="./resources/aa/settings.png" alt="" class="w-2/12 mx-auto">
-                        </div>
-                
-                        <div class="p-5">
-                            <h2 class="text-3xl font-semibold mb-3">Aircraft Maintenance</h2>
-                            <p class="font-robo text-medium mb-3">Aircraft Maintenance Engineer repairs,
-                                check operating engines & electronics systems, troubleshoot the problem</p>
-                            <a href="./courses.html#ae" class="hover:text-purpltint-900 hover:underline font-medium">Learn more ></a>
+                <a href="./courses.html#ae">
+                    <div class="lg:w-3/12 py-10 items-center text-center shadow-xl bg-purple-50 rounded-lg hover:bg-purple-100 transform hover:scale-105">
+                        <div class="flex flex-col items-center">
+                            <div class="">
+                                <img src="./resources/aa/settings.png" alt="" class="w-2/12 mx-auto">
+                            </div>
+                            <div class="p-5">
+                                <h2 class="text-3xl font-semibold mb-3">Aircraft Maintanance</h2>
+                                <p class="font-robo text-medium mb-3">Aircraft Maintenance Engineer repairs,
+                                    check operating engines & electronics systems, troubleshoot the problem of the aircraft</p>
+                                <a href="./courses.html#ae" class="hover:text-purpltint-900 hover:underline font-medium">Learn more
+                                    ></a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-
-
-
+        
+        
+        
         </section>
 
 
@@ -353,25 +339,56 @@
         </section>
 
 
+        <!-- cta 2  -->
+        <section class="font-pops">
+            <div class="lg:px-32 px-5 text-center cta2-custom-bg text-white py-20">
+                <div class="mx-auto">
+                    <p class="text-4xl font-semibold mb-5 ">Need Help? <span class="text-yellow-300">Talk with an
+                            Expert</span></p>
+                    <p class="text-2xl font-medium mb-12 lg:px-24">If you still have some doubts and questions , our
+                        councellors and teacher's can guide you
+                        by <span class="text-yellow-300">answering all your questions</span> on a phone call with you.
+                    </p>
+                </div>
+        
+                <div class="mx-auto">
+                    <form name="downloadbrouchure2" id="downloadbrouchure2">
+        
+                        <div class="text-lg pN:mx-auto">
+                            <label class="mr-1 font-semibold " for="">Your Name :</label>
+                            <input class="mr-8 text-black  px-8 py-2 pN:w-11/12 pN:w-full " type="text" name="Name" id=""
+                                placeholder="Your Full Name" required>
+        
+                            <label class="font-semibold " for="mr-1">Phone Number :</label>
+                            <input class="mr-8 px-8  py-2 text-black pN:w-11/12 pN:w-full " type="text" name="Phone" id=""
+                                placeholder="Your Phone Number" pattern="[789][0-9]{9}" required>
+        
+                            <input type="text" id="datetime10" name="Time" value="" hidden>
+        
+                            <button class=" pN:mt-10  font-semibold rounded text-xl px-10 py-4 bg-yellow-300 text-bluegray-900 
+                                    hover:bg-yellow-400 text-white pN:w-full" type="submit" id="rinformation"
+                                onclick="headbtnload2()">
+                                <div class="mx-auto" id="btnspinner2">
+                                    <div class="animate-spin mx-auto rounded-full h-4 w-4 border-b-8 border-white"></div>
+                                </div>
+                                <span id="ctatext">Request Information</span>
+                                <i class="bi bi-telephone-inbound" id="ctatext2"></i>
+                            </button>
+                        </div>
+        
+                    </form>
+                <div>
+        
+        
+        
+            </div>
+        </section>
+
+
         <!-- cta + popular  -->
         <div class="bg-fixed bg-cover " style="background-image: url(./resources/aa/qweblob.svg)">
-            <!-- cta  -->
-            <section class="pN:pb-24 pN:mb-28 py-56">
-                <div class="font-pops  text-white lg:px-32 px-5 flex flex-col pN:flex-col-reverse  ">
-                    <div class="bg-blacktint-900 rounded py-20 px-16 pN:text-center ">
-                        <p class="text-4xl font-semibold text-yellow-300 mb-4 mr-auto">Download our student help book</p>
-                        <p class="text-xl font-medium mb-10 mr-auto">It has all the details about courses offered,admission
-                            details and process.</p>
-                        <button class="px-6 py-3 bg-yellow-300 text-black rounded font-semibold btn-open hover:bg-yellow-400">Download
-                            Now</button>
-                        <!-- <a href="" class="px-6 py-3 bg-yellow-300 text-black rounded font-semibold btn-open " >Download Now</a> -->
-                    </div>
-                    <div class="">
-                        <img src="./resources/aa/year2021.png" alt=""
-                            class="lg:w-3/12 w-3/4 pN:mx-auto lg:z-10 lg:ml-auto lg:-mt-96 lg:pr-12 rounded-">
-                    </div>
-                </div>
-            </section>
+
+            
             <!-- popular courses  -->
             <section class="font-pops  lg:py-20 pN:pb-28  " >
                 <div class="lg:px-32 px-5">
@@ -389,7 +406,7 @@
                         <!-- card 1  -->
                         <div class=" flex flex-col p-5 shadow-xl rounded bg-white lg:h-80">
                             <div class="bg-blacktint-800 text-white py-3 px-3 font-medium rounded-t-md">
-                                <p>Advance Diploma</p>
+                                <p>Advance Diplom</p>
                                 <p>~12 Months</p>
                             </div>
                             <div class="text-white bg-purpltint-900 py-3 px-3">
@@ -428,7 +445,7 @@
                             </div>
                             <div class="text-white bg-purpltint-900 py-3 px-3">
                                 <h2 class="text-3xl mb-3 font-semibold">Aviation Operations</h2>
-                                <p class="">*Integrated Diploma & Degree Program Options</p>
+                                <p class="">*Integrated Diploma & Degree Program Optionss</p>
                                 <p class="lg:mb-16"></p>
                         
                             </div>
@@ -479,7 +496,7 @@
                             </div>
                             <div class="text-white bg-purpltint-900 py-3 px-3">
                                 <h2 class="text-3xl mb-3 font-semibold">Event Paramount</h2>
-                                <p class="">*Specialized Event Management Course for experienced candidates</p>
+                                <p class="">*Specialised Event Management Course for experienced candidates</p>
                                 <p class="lg:mb-10"></p>
                         
                             </div>
@@ -496,120 +513,92 @@
                     </div>
                 </div>
             </section>
+
+            <!-- about us  -->
+            <section class=" font-pops px-32 pN:px-5 text-bluegray-900  py-32">
+                <div class="flex  mx-auto pN:flex-col-reverse">
+                    <div class=" mx-auto pN:my-8 mr-14 pN:mr-5">
+                        <div class="flex items-end justify-center lg:justify-start gap-5 mb-6 ">
+                            <img src="./resources/aa/aeron-2.jpg" alt="" class="w-5/12 rounded-md shadow-xl ">
+                            <img src="./resources/aa/aeron-1.jpg" alt="" class="w-5/12 rounded-md shadow-xl ">
+                        </div>
+                        <div class="flex items-start justify-center lg:justify-start gap-5 ">
+            
+                            <img src="./resources/aa/aeron-3.jpg" alt="" class="w-4/12 rounded-md shadow-xl ">
+                            <img src="./resources/aa/aeron-4.jpg" alt="" class=" w-5/12 rounded-md shadow-xl ">
+                        </div>
+                    </div>
+            
+                    <div class=" my-auto pN:items-center pN:text-center ">
+                        <p class="text-lg text-purpltint-700 mb-2 font-semibold ">About us</p>
+                        <p class="text-4xl font-semibold mb-3">Raising world class professional in Aviation and related
+                            industries</p>
+                        <p class="pr-5 mb-12 text-lg">Our courses are designed by our experts after consulting industry
+                            senior officials who have
+                            real inside knowledge and data in their industries.Our training courses are updated regualrly
+                            with in demand skills
+                            for job placements.
+                        </p>
+            
+                        <div class="grid grid-cols-2 gap-4 text-lg items-center font-semibold text-blacktint-800 ">
+                            <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span> Internship Guarantee
+                            </p>
+                            <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>International Partnerships</p>
+                            <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>Ex-Industry Experts faculties
+                            </p>
+                            <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>World class infrastructure
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- stats  -->
+            <section class="font-pops  px-32 pN:px-5 pN:mb-28  py-20">
+                <div class=" pN:px-2 px-16 ">
+            
+                    <div
+                        class="bg-gradient-to-b text-white from-blacktint-1000 via-blacktint-900 to-blacktint-800 text-center pb-20 pt-12">
+                        <p class="text-4xl font-semibold mb-5">Why study at Aeron Academy </p>
+                        <p class="px-48 pN:px-8 font-medium p">It is our mission to build and nurture the youth of India to be
+                            leader in the aviation and hospitality frontier across
+                            the globe. We have taken mission to bestow knowledge and fill youth with confidence for the job market.
+                        </p>
+                    </div>
+            
+                    <div class="w-9/12 mx-auto -mt-12 mb-12 rounded shadow-xl">
+                        <div class="rounded text-center bg-white flex justify-between pN:flex-wrap py-8 ">
+                            <div class="lg:border-r-2 flex-1 pN:border-b-2 pN:pb-3">
+                                <P class="font-medium text-lg">Students</P>
+                                <P class="font-semibold text-purpltint-700 text-4xl">20K+</P>
+                            </div>
+                            <div class="lg:border-l-2 lg:border-r-2  flex-1 pN:border-b-2  ">
+                                <P class="font-medium text-lg">Placements</P>
+                                <P class="font-semibold text-purpltint-700 text-4xl">3.5k+</P>
+                            </div>
+                            <div class="lg:border-l-2 lg:border-r-4 flex-1 pN:pt-3">
+                                <P class="font-medium text-lg">Faculties</P>
+                                <P class="font-semibold text-purpltint-700 text-4xl">50+</P>
+                            </div>
+                            <div class="  flex-1 pN:pt-3">
+                                <P class="font-medium text-lg">Courses</P>
+                                <P class="font-semibold text-purpltint-700 text-4xl">20+</P>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                </div>
+            </section>
+
         </div>
 
-        <!-- cta 2  -->
-        <section class="font-pops">
-            <div class="lg:px-32 px-5 text-center cta2-custom-bg text-white py-20">
-                <div class="mx-auto">
-                    <p class="text-4xl font-semibold mb-5 ">Need Help? <span class="text-yellow-300">Talk with an
-                            Expert</span></p>
-                    <p class="text-2xl font-medium mb-12 lg:px-24">If you still have some doubts and questions , our
-                        counselor and teacher's can guide you
-                        by <span class="text-yellow-300">answering all your questions</span> on a phone call with you.
-                    </p>
-                </div>
-
-                <div class="mx-auto">
-                    <form  name="downloadbrouchure2" id="downloadbrouchure2">
-
-                        <div class="text-lg pN:mx-auto">
-                            <label class="mr-1 font-semibold " for="">Your Name :</label>
-                            <input class="mr-8 text-black  px-8 py-2 pN:w-11/12 pN:w-full " type="text" name="Name" id=""
-                                placeholder="Your Full Name" required>
-                            
-                            <label class="font-semibold " for="mr-1">Phone Number :</label>
-                            <input class="mr-8 px-8  py-2 text-black pN:w-11/12 pN:w-full " type="text" name="Phone" id=""
-                                placeholder="Your Phone Number"  pattern="[789][0-9]{9}" required>
-
-                                <input type="text" id="datetime10" name="Time" value="" hidden>
-
-                            <button class=" pN:mt-10  font-semibold rounded text-xl px-10 py-4 bg-yellow-300 text-bluegray-900 
-                        hover:bg-yellow-400 text-white pN:w-full" type="submit" id="rinformation">Request Information <i
-                                    class="bi bi-telephone-inbound"></i></button>
-                        </div>
-
-                    </form>
-                    <div>
 
 
-                    </div>
-        </section>
 
         
 
-        <!-- about us  -->
-        <section class=" font-pops px-32 pN:px-5 text-bluegray-900 bg-white py-32">
-            <div class="flex  mx-auto pN:flex-col-reverse">
-                <div class=" mx-auto pN:my-8 mr-14 pN:mr-5">
-                    <div class="flex items-end justify-center lg:justify-start gap-5 mb-6 ">
-                        <img src="./resources/aa/aeron-2.jpg" alt="" class="w-5/12 rounded-md shadow-xl ">
-                        <img src="./resources/aa/aeron-1.jpg" alt="" class="w-5/12 rounded-md shadow-xl ">
-                    </div>
-                    <div class="flex items-start justify-center lg:justify-start gap-5 ">
-            
-                        <img src="./resources/aa/aeron-3.jpg" alt="" class="w-4/12 rounded-md shadow-xl ">
-                        <img src="./resources/aa/aeron-4.jpg" alt="" class=" w-5/12 rounded-md shadow-xl ">
-                    </div>
-                </div>
 
-                <div class=" my-auto pN:items-center pN:text-center ">
-                    <p class="text-lg text-purpltint-700 mb-2 font-semibold ">About us</p>
-                    <p class="text-4xl font-semibold mb-3">Raising world class professional in Aviation and related
-                        industries</p>
-                    <p class="pr-5 mb-12 text-lg">Our courses are designed by our experts after consulting industry
-                        senior officials who have
-                        real inside knowledge and data in their industries.Our training courses are updated regularly
-                        with in demand skills
-                        for job placements.
-                    </p>
-
-                    <div class="grid grid-cols-2 gap-4 text-lg items-center font-semibold text-blacktint-800 ">
-                        <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span> Internship Guarantee
-                        </p>
-                        <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>International Partnerships</p>
-                        <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>Ex-Industry Experts faculties </p>
-                        <p class=""> <span><i class="bi bi-check-square mr-1 text-3xl"></i></span>World class infrastructure </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- stats  -->
-        <section class="font-pops  px-32 pN:px-5 pN:mb-28 bg-white py-20">
-            <div class=" pN:px-2 px-16 ">
-
-                <div
-                    class="bg-gradient-to-b text-white from-blacktint-1000 via-blacktint-900 to-blacktint-800 text-center pb-20 pt-12">
-                    <p class="text-4xl font-semibold mb-5">Why study at Aeron Academy </p>
-                    <p class="px-48 pN:px-8 font-medium p">It is our mission to build and nurture the youth of India to be leader in the aviation and hospitality frontier across
-                    the globe. We have taken mission to bestow knowledge and fill youth with confidence for the job market.</p>
-                </div>
-
-                <div class="w-9/12 mx-auto -mt-12 mb-12 rounded shadow-xl">
-                    <div class="rounded text-center bg-white flex justify-between pN:flex-wrap py-8 ">
-                        <div class="lg:border-r-2 flex-1 pN:border-b-2 pN:pb-3">
-                            <P class="font-medium text-lg">Students</P>
-                            <P class="font-semibold text-purpltint-700 text-4xl">20K+</P>
-                        </div>
-                        <div class="lg:border-l-2 lg:border-r-2  flex-1 pN:border-b-2  ">
-                            <P class="font-medium text-lg">Placements</P>
-                            <P class="font-semibold text-purpltint-700 text-4xl">3.5k+</P>
-                        </div>
-                        <div class="lg:border-l-2 lg:border-r-4 flex-1 pN:pt-3">
-                            <P class="font-medium text-lg">Faculties</P>
-                            <P class="font-semibold text-purpltint-700 text-4xl">50+</P>
-                        </div>
-                        <div class="  flex-1 pN:pt-3">
-                            <P class="font-medium text-lg">Courses</P>
-                            <P class="font-semibold text-purpltint-700 text-4xl">20+</P>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
 
 
 
@@ -768,35 +757,18 @@
 
         </div>
 
+
         <div class=" px-10 py-5 bg-gray-200 font-noto font-light flex justify-between 
-                            pN:flex-wrap ">
-        
+                    pN:flex-wrap ">
+            
             <div class="pN:text-center">
                 <p class="pN:mx-auto lg:inline lg:mr-3">©2021 Aeron Academy.All Rights Reserved,</p>
                 <a href="./privacypolicy.html" class="hover:text-purpltint-900 ">Privacy Policy</a>
-            </div>
+            </div>        
             <p class="pN:mx-auto"> Made By therohitmishra.com</p>
         </div>
     </footer>
 
-
-
-
-    <script type="text/javascript">
-        document.getElementById('downloadnowbtn').addEventListener('click', function () 
-        {
-            
-                fbq('track', 'CompleteRegistration', { value: 1, currency: 'INR',});
-    
-        }, false);
-
-        document.getElementById('rinformation').addEventListener('click', function () {
-
-                fbq('track', 'CompleteRegistration', { value: 1, currency: 'INR', });
-
-        }, false);
-
-    </script>
 
 
     <!-- js  -->
