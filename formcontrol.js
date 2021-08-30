@@ -4,6 +4,7 @@ let modal = document.getElementById("modal")
 let closebtn = document.getElementById("btn-close")
 let fbtn = document.getElementById("footerdownload")
 
+
 closebtn.onclick = function () {
     modal.style.display ="none"
 }
@@ -95,7 +96,6 @@ function headbtnload2() {
     
     document.getElementById("ctatext").style.display = "none";
     document.getElementById("ctatext2").style.display = "none";
-
     document.getElementById("btnspinner2").style.display = "block";
 }
 
