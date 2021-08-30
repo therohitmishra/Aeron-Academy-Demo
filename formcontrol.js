@@ -2,12 +2,7 @@
 //download form modal toggle
 let modal = document.getElementById("modal")
 let closebtn = document.getElementById("btn-close")
-let openbtn = document.getElementById("btn-open")
 let fbtn = document.getElementById("footerdownload")
-
-openbtn.onclick = function () {
-    modal.style.display = "block"
-}
 
 closebtn.onclick = function () {
     modal.style.display ="none"
