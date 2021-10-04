@@ -10,6 +10,25 @@ document.getElementById("datetime2").value = time;
 // google sheet web app link 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxyszgmxtU7GmCf1Fdfz8q7s3q0Mk5j9wh4FpE2hKxmzeI0mKeto4ojX9RbKn1RYUt9kA/exec'
 
+
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-331309109/G971CLTBp_kCELXA_Z0B',
+      'event_callback': callback
+  });
+  return false;
+}
+
+function trackingtwo(){
+    gtag_report_conversion('http://contactusformbtn.com')
+}
+
+
 function contactusend ()
 {
     var formreset = document.getElementById("contactform");
@@ -17,6 +36,7 @@ function contactusend ()
     var modal = document.getElementById("exitmodal");
     modal.style.display = "block";
 }
+
 //form submission of contact form
 // it collects name + phone + email + interest + refer code
 const contactus = document.forms['contactusform']

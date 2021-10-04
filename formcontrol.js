@@ -84,9 +84,23 @@ heroform.addEventListener('submit', e => {
             .catch(error => console.error('Error!', error.message))
 })
 
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-331309109/G971CLTBp_kCELXA_Z0B',
+      'event_callback': callback
+  });
+  return false;
+}
+
 
 function headbtnload() {
     
+    gtag_report_conversion("http://indexpageform1hero.com");
     document.getElementById("btnexthero").style.display = "none";
     document.getElementById("btnspinner").style.display = "block";
 }
@@ -94,6 +108,7 @@ function headbtnload() {
 ///////////////////btn spinner cta//////////////////////
 function headbtnload2() {
     
+    gtag_report_conversion("http://indexpageform2info.com");
     document.getElementById("ctatext").style.display = "none";
     document.getElementById("ctatext2").style.display = "none";
     document.getElementById("btnspinner2").style.display = "block";
