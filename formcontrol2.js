@@ -13,36 +13,35 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxyszgmxtU7GmCf1Fdfz8
 
 function gtag_report_conversion(url) {
   var callback = function () {
-    if (typeof(url) != 'undefined') {
+    if (typeof (url) != 'undefined') {
       window.location = url;
     }
   };
   gtag('event', 'conversion', {
-      'send_to': 'AW-331309109/G971CLTBp_kCELXA_Z0B',
-      'event_callback': callback
+    'send_to': 'AW-331309109/G971CLTBp_kCELXA_Z0B',
+    'event_callback': callback
   });
   return false;
 }
 
-function trackingtwo(){
-    gtag_report_conversion('http://contactusformbtn.com')
+function trackingtwo() {
+  gtag_report_conversion()
 }
 
 
-function contactusend ()
-{
-    var formreset = document.getElementById("contactform");
-    formreset.reset();
-    var modal = document.getElementById("exitmodal");
-    modal.style.display = "block";
+function contactusend() {
+  var formreset = document.getElementById("contactform");
+  formreset.reset();
+  var modal = document.getElementById("exitmodal");
+  modal.style.display = "block";
 }
 
 //form submission of contact form
 // it collects name + phone + email + interest + refer code
 const contactus = document.forms['contactusform']
 contactus.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(contactus) })
-            .then(response => contactusend())
-            .catch(error => console.error('Error!', error.message))
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(contactus) })
+    .then(response => contactusend())
+    .catch(error => console.error('Error!', error.message))
 })
